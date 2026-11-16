@@ -42,7 +42,7 @@ The event page lists it as the track 2 sponsor; track 1 belongs to Ariete Tech S
 | Consulting and strategy | Brand positioning, tone of voice, marketing plans, buyer personas, competitor analysis                  |
 | Digital marketing       | Social media management, editorial plans, Meta, Google, LinkedIn and TikTok ads, lead generation        |
 | Branding and image      | Visual identity, brochures, catalogues, packaging, product and corporate photo and video                |
-| Web design              | Websites and e-commerce on WordPress and Shopify, SEO                                                   |
+| Web design              | Sites and e-commerce on WordPress and Shopify, SEO                                                      |
 | AI automation           | Lead to AI to CRM to conversion flows with Zapier and n8n, email automation, AI consulting and training |
 
 Three things worth knowing before we pick an idea:
@@ -88,12 +88,12 @@ Each jury also gives books to projects that stand out.
 Prepare generic plumbing only, and build the actual product on the day.
 The rules are not published, and hackathons often require the project to be built during the event.
 
-Our repo, [b-arol-o/agenthon-2026](https://github.com/b-arol-o/agenthon-2026),
-is still the untouched Python project template: no issues, no project code.
+Our repository, [b-arol-o/agenthon-2026](https://github.com/b-arol-o/agenthon-2026),
+has the event facts in `README.md` but no issues and no project code yet.
 
 | Piece               | What it is                                                                        | Why before Saturday                   |
 | ------------------- | --------------------------------------------------------------------------------- | ------------------------------------- |
-| Repo identity       | README with event facts, track theme, judging criteria, team                      | Everyone lands on the same page       |
+| Repository identity | `README.md` with event facts, track theme, judging criteria, team                 | Everyone lands on the same page       |
 | Python skeleton     | uv project, `src/` package, Ruff, pytest, `.env.example` for API keys             | No setup time lost at 9:00            |
 | Generation plumbing | Thin provider-agnostic wrapper for text and image generation, with one smoke test | Swap models once the brief is known   |
 | Demo shell          | Minimal web UI: prompt in, generated output shown                                 | Starting point for the live demo      |
@@ -109,9 +109,9 @@ These are the choices to settle in the brainstorming session.
       The natural guess is Gemini for text and images, since this is a Google Build with AI event,
       plus ElevenLabs for voice, since it is listed as tech partner.
       Neither is confirmed as required.
-- [ ] **Scope of preparation.** All five pieces above, or only the README and Python skeleton for now?
+- [ ] **Scope of preparation.** All five pieces above, or only `README.md` and the Python skeleton for now?
 - [ ] **Roles on the day.** Who builds the backend, who builds the demo UI, who owns the pitch?
-- [ ] **Stack for the demo.** A quick Python UI, or a separate web front end?
+- [ ] **Stack for the demo.** A quick Python UI, or a separate web frontend?
 - [ ] **Budget.** Who pays for API usage, and is there a cap?
 - [ ] **Rules check.** Someone rereads the event page before Saturday for the published rules and the per-phase schedule.
 
@@ -146,14 +146,15 @@ so a new session or another assistant can continue without redoing the research.
   ([home](https://demetradesign.it/), [approach](https://demetradesign.it/approccio/),
   [projects](https://demetradesign.it/realta-e-progetti/), [AI4Lead](https://ai4lead.com/)).
   Everything learned is in the sections above.
-- Inspected the repo: still the bare `python-project-template`, no issues.
-- Wrote this document. No code was written; this file is the only change to the repo.
+- Inspected the repository: still the bare `python-project-template`, no issues.
+- Wrote this document. No code was written; this file is the only change to the repository.
 
-### State of the repo
+### State of the repository
 
 - Repository: [b-arol-o/agenthon-2026](https://github.com/b-arol-o/agenthon-2026).
-- Working branch of the session: `claude/sweet-mccarthy-ciyxfz`. It holds this file and nothing else beyond the initial commit.
-- Contents: devcontainer, a linter workflow, a docsify `docs/` folder and the template README.
+- Working branch of the session: `claude/sweet-mccarthy-ciyxfz`. It holds this file, merged with the latest `main`.
+- Contents: devcontainer, a linter workflow, a docsify `docs/` folder, a `README.md` with the event facts
+  and the original template text in `README_template.md`.
   No `pyproject.toml`, no source package.
 
 ### Waiting on the team
@@ -164,16 +165,16 @@ so a new session or another assistant can continue without redoing the research.
 
 ### Next steps once decided
 
-1. Replace the template README with the event and team facts.
+1. Extend `README.md` with the track theme, judging criteria and team roles.
 2. Add the Python skeleton: uv project, `src/` package, Ruff, pytest, `.env.example`.
 3. Add the generation wrapper and the demo shell, if the team wants them before Saturday.
 4. Reread the event page for the rules before building anything product-specific.
 
 ### Practical notes
 
-- In the cloud session, a website can only be read after its domain is added to the environment's allowed domains.
+- In the cloud session, a site can only be read after its domain is added to the environment's allowed domains.
   `agenthon.gdgtorino.it` was added on 16 November;
-  the page fetch tool still failed on it, while a plain download with curl worked.
+  the page fetch tool still failed on it, while a plain download with `curl` worked.
 - Not yet researched: the jury members (not announced), Ariete Tech Solutions (track 1 sponsor, not our track),
   and the other partners listed on the page (ElevenLabs, DevPunks, Apogeo, Feat. House),
   whose exact roles were not checked.
