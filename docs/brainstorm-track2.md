@@ -2,8 +2,8 @@
 
 <!-- (2026-11-16) -->
 
-Snapshot of the live document at <https://claude.ai/artifact/V4C6XZQ9LAcCuCHBLehNsC>, taken on 16 November 2026.
-The live document may have changed since.
+Snapshot of the team brainstorm taken on 16 November 2026.
+This file is now the shared reference; edit it here.
 
 ## What we know
 
