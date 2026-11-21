@@ -4,8 +4,10 @@
 
 Verified product data, visual identity specifications, packaging fidelity rules, and tone-of-voice guardrails distilled from the official Track 2 client kit (`00_LEGGIMI.pdf`, `Feyles_guida-identita.pdf`, `Feyles_presentazione-aziendale.pdf`, and `Feyles_testi-e-informazioni.pdf`).
 
+- **Client kit files (>1 GB, not committed to Git):** [Google Drive brand materials folder](https://drive.google.com/drive/folders/1GuPyFJ_Vz8jqk0EnZyB6Sah404fuGxk6)
+
 > **IP and usage conditions:** All brand marks, packaging files, official texts, and product photographs in the client kit belong to Feyles Srl and are licensed **exclusively for Agenthon 2026 submissions**.
-> They may be passed to generative AI tools as reference inputs for competition deliverables, and raw proprietary binaries or print masters must not be committed to public repositories or redistributed outside the event.
+> They may be passed to generative AI tools as reference inputs for competition deliverables, and raw proprietary binaries or print masters must not be committed to Git or redistributed outside the event.
 
 ## Source-of-truth hierarchy
 
