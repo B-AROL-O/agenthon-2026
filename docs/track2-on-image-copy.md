@@ -76,4 +76,27 @@ These lines come from the same copy system but are not rendered on any static vi
 - the spot's voiceover sign-off «Feyles. Si divide, si condivide.»;
 - the post captions and hashtags in the [social copy deck](track2-social-copy-deck.md).
 
+## Christmas and Cioccorubatà extension
+
+Rendered by `genai/natale.py`; CTAs are burgundy pills with cream text, except the sky blue CTA on the full-range set.
+
+| Phrase                                                                      | Where it appears                                                                                                           |
+| --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| «Dal 1968» + «si passa di mano.»                                            | `natale-ad-{4x5,1x1,9x16}`, `bus-shelter-natale-120x176`                                                                   |
+| «Si divide. Si condivide.» + «A chi va l’altra metà?»                       | `social-natale-tavola-{9x16,4x5,1x1}`                                                                                      |
+| «Da regalare a chi apparecchia per tutti.»                                  | `social-natale-regalo-*`, `web-banner-natale-16x9`, all four `display-natale-*`, `magazine-natale-a4`, `carousel-natale-5` |
+| «Anche il dolce si divide.»                                                 | `social-cioccorubata-*`, `cioccorubata-ad-4x5`                                                                             |
+| «Rubatà all’olio d’oliva ricoperti di cioccolato.» and the three flavours   | `social-cioccorubata-*`, `cioccorubata-ad-4x5`                                                                             |
+| «Qual è il vostro?»                                                         | `social-gamma-completa-*`, `range-completa-ad-4x5`, `web-banner-gamma-completa-16x9`                                       |
+| «Grissini Rubatà, dal 1968.»                                                | `carousel-natale-1`                                                                                                        |
+| «Una famiglia, un laboratorio, lo stesso grissino da più di cinquant’anni.» | `carousel-natale-2`                                                                                                        |
+| «Dal laboratorio di Cambiano, alle porte di Torino, a casa vostra.»         | `carousel-natale-3`                                                                                                        |
+| «E in piazza Castello, a Torino.»                                           | `carousel-natale-4`, with «Venite a trovarci in piazza Castello»                                                           |
+| «Buon Natale da dividere con ______»                                        | Back of `gift-tag-natale-55x95mm`                                                                                          |
+| «Componete la vostra box regalo»                                            | Every Christmas and Cioccorubatà file except `natale-tavola` and the full-range set                                        |
+| «Ordinate online: spediamo in tutta Italia»                                 | `social-gamma-completa-*`, `range-completa-ad-4x5`, `web-banner-gamma-completa-16x9`                                       |
+
+The carousel lines and «Grissini Rubatà, dal 1968.» are verbatim from the client's site.
+The magazine page adds body copy from the kit: «Il Cioccorubatà fondente è il nostro Rubatà all’olio d’oliva ricoperto di cioccolato con almeno il 70% di cacao.»
+
 <!-- EOF -->
