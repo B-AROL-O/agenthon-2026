@@ -68,6 +68,7 @@ A first version of the deck built from this text is in the [HTML export](slides/
 
 **Visual:** grid of six of the 46 static files on cream: `hero-ad-4x5`, `range-ad-4x5`, `social-condivisione-9x16`, `social-finestra-1x1`, `carousel-1`, `print-poster-2x3`.
 Names and descriptions of every file are in the [static visuals catalogue](track2-wp2-deliverables.md).
+In the HTML deck the six images are in place, as web-sized copies of the Drive files in `docs/slides/img/`.
 
 > **One gesture, every channel**
 >

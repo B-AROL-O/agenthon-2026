@@ -242,6 +242,33 @@
         margin-top: 4px;
       }
 
+      /* Campaign: six of the static files in one row, at the same height */
+      .shots {
+        flex: 1;
+        display: flex;
+        gap: 24px;
+        margin-top: 48px;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: flex-start;
+      }
+      .shots figure {
+        margin: 0;
+        width: min-content;
+      }
+      .shots img {
+        display: block;
+        height: 330px;
+        width: auto;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+      }
+      .shots figcaption {
+        font-size: 22px;
+        color: var(--soft);
+        margin-top: 14px;
+      }
+
       /* Pipeline */
       .steps {
         display: flex;
@@ -569,37 +596,49 @@
               The campaign · 46 files · Ads · Social · Web · Print
             </p>
             <h2>One gesture, every channel</h2>
-            <div class="grid3">
-              <div class="ph">
-                <p class="ph-label">[hero-ad-4x5]</p>
-                <p class="quote">«Spezzatelo. È fatto apposta.»</p>
-                <p class="gloss">Break it. It’s made for that.</p>
-              </div>
-              <div class="ph">
-                <p class="ph-label">[range-ad-4x5]</p>
-                <p class="quote">«Qual è il vostro?»</p>
-                <p class="gloss">Which one is yours?</p>
-              </div>
-              <div class="ph">
-                <p class="ph-label">[social-condivisione-9x16]</p>
-                <p class="quote">«A chi va l’altra metà?»</p>
-                <p class="gloss">Who gets the other half?</p>
-              </div>
-              <div class="ph">
-                <p class="ph-label">[social-finestra-1x1]</p>
-                <p class="quote">«Dentro c’è quello che deve esserci.»</p>
-                <p class="gloss">Inside is what should be inside.</p>
-              </div>
-              <div class="ph">
-                <p class="ph-label">[carousel-1]</p>
-                <p class="quote">«Comincia da una spiga.»</p>
-                <p class="gloss">It starts from an ear of wheat.</p>
-              </div>
-              <div class="ph">
-                <p class="ph-label">[print-poster-2x3]</p>
-                <p class="quote">«Si divide. | Si condivide.»</p>
-                <p class="gloss">It breaks. It’s shared.</p>
-              </div>
+            <div class="shots">
+              <figure>
+                <img
+                  src="img/hero-ad-4x5.jpg"
+                  alt="Hero ad: «Spezzatelo. È fatto apposta.»"
+                />
+                <figcaption>Break it. It’s made for that.</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="img/range-ad-4x5.jpg"
+                  alt="Range ad: «Qual è il vostro?»"
+                />
+                <figcaption>Which one is yours?</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="img/social-condivisione-9x16.jpg"
+                  alt="Story: «A chi va l’altra metà?»"
+                />
+                <figcaption>Who gets the other half?</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="img/social-finestra-1x1.jpg"
+                  alt="Post: «Dentro c’è quello che deve esserci.»"
+                />
+                <figcaption>Inside is what should be inside.</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="img/carousel-1.jpg"
+                  alt="Carousel, slide 1: «Comincia da una spiga.»"
+                />
+                <figcaption>It starts from an ear of wheat.</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="img/print-poster-2x3.jpg"
+                  alt="Poster: «Si divide. | Si condivide.»"
+                />
+                <figcaption>It breaks. It’s shared.</figcaption>
+              </figure>
             </div>
           </section>
         </div>
@@ -610,8 +649,6 @@
           set in about 40 seconds. Walk the grid quickly. Read one headline in
           Italian and give its English («Spezzatelo. È fatto apposta.»: “Break
           it. It’s made for that.”), then move on: don’t translate them all.
-          Replace each placeholder with the file named in it, from the Drive
-          folder.
         </p>
       </div>
       <div class="slide-wrap">
