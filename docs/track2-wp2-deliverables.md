@@ -5,6 +5,7 @@
 Catalogue of every static visual submitted for the «Si divide. Si condivide.» campaign: deliverables 2, 3 and 4 of the [Track 2 challenge brief](track2-challenge.md), produced for [issue #9](https://github.com/B-AROL-O/agenthon-2026/issues/9).
 The files are in the [submission Drive folder](https://drive.google.com/drive/folders/1mL-yWZ0gsObf_6VHV3TmJgGfv0_Wswkp), under `02-social/`, `03-web-print/` and `04-ad-image/`.
 The concept, copy and guardrails come from the [concept lock](track2-concept-lock.md); the captions for each post are in the [social copy deck](track2-social-copy-deck.md).
+Every phrase written on the images, with the files it appears on, is listed in the [on-image catchphrases](track2-on-image-copy.md).
 
 ## How the files were made
 
