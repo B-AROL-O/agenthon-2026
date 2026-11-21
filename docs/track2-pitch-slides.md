@@ -6,7 +6,7 @@ Text to put on each slide of the 5-minute pitch, following the [pitch deck outli
 A first version of the deck built from this text is in the [HTML export](slides/track2-pitch-deck.html ":ignore") under `docs/slides/`: open it in a browser to see every slide with its speaker notes.
 
 - **On-screen text is in English**, so every juror can read it; campaign copy stays in Italian, with the English underneath.
-  If the organizers confirm the pitch must be in one language only, translate the English lines; the Italian copy does not change.
+  The pitch itself is delivered in English, as agreed with the organizers (see the [pitch outline](track2-pitch.md)).
 - **One idea per slide, few words.** Each slide lists the text, the visual, and what the speaker covers; the line in bold at the top of the text is the slide title, set large.
 - **Fonts and colours from the campaign:** `Playfair Display` for titles, `Lato` for text; sky blue `#8DC6E8`, cream `#F9F2E9`, yellow `#F9C86A`.
   White text on sky blue, dark text on cream.
