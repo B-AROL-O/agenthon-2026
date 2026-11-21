@@ -64,7 +64,17 @@ A first version of the deck built from this text is in the [HTML export](slides/
 
 **Speaker:** nothing during the spot.
 
-## Slide 5: The campaign
+## Slide 5: Out in the world
+
+**Visual:** the three mockups in `03-web-print/mockups/`, side by side on cream: the bus shelter in Turin, the billboard and the story on a phone.
+
+> **From the street to the phone**
+
+**Labels under the images, small:** Bus shelter, Turin · Billboard · Story on a phone
+
+**Speaker:** ten seconds, right after the spot: this is where it lives, a bus shelter in Turin, a billboard, a story on your phone.
+
+## Slide 6: The campaign
 
 **Visual:** grid of six of the 46 static files on cream: `hero-ad-4x5`, `range-ad-4x5`, `social-condivisione-9x16`, `social-finestra-1x1`, `carousel-1`, `print-poster-2x3`.
 Names and descriptions of every file are in the [static visuals catalogue](track2-wp2-deliverables.md).
@@ -85,9 +95,7 @@ In the HTML deck the six images are in place, as web-sized copies of the Drive f
 
 **Speaker:** one look everywhere: daylight, flat colours taken from the pack, layouts split in two like the snap. 46 files from one script, so a copy change rebuilds the whole set in about 40 seconds.
 
-**Optional, strong for the demo:** right after the spot, one slide with the three mockups in `03-web-print/mockups/`: the bus shelter in Turin, the billboard and the story on a phone.
-
-## Slide 6: How we made it
+## Slide 7: How we made it
 
 **Visual:** a four-step pipeline, left to right, with an arrow between each step.
 
@@ -104,7 +112,7 @@ In the HTML deck the six images are in place, as web-sized copies of the Drive f
 
 **Speaker:** the pipeline, then one real problem and how it was solved: _[for example, a warped pack replaced with the real photo]_.
 
-## Slide 7: Beyond the prototype
+## Slide 8: Beyond the prototype
 
 **Visual:** a row of the eight Rubatà cartons in their colours, each with a snapped breadstick in front; below, the friend-tag post.
 
@@ -117,7 +125,7 @@ In the HTML deck the six images are in place, as web-sized copies of the Drive f
 
 **Speaker:** what we would do next for Feyles: one spot per flavour, the friend-tag challenge, gift-box versions for the holidays.
 
-## Slide 8: Close
+## Slide 9: Close
 
 **Visual:** the spot's end card: cream `#F9F2E9`, gold logo, `Il Classico` packshot.
 

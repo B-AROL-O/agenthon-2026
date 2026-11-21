@@ -36,10 +36,11 @@ Speakers are a proposal; swap them as you prefer.
 | 2   | 0:20–0:50 | The brief            | `Il Classico` carton; "Rubatà, for 25 to 40 year-olds, aperitivo and gifts" | Gianpaolo | Fit with the theme  |
 | 3   | 0:50–1:30 | The idea             | «dividere» = to break + to share; the snapped Rubatà image                  | Gianpaolo | Innovation          |
 | 4   | 1:30–2:10 | **Demo: the spot**   | The 26.5-second spot, full screen, with sound                               | Luca      | Technical execution |
-| 5   | 2:10–2:50 | The campaign         | Grid of the static visuals: ad image, social set, web banner, poster        | Alessio   | Fit with the theme  |
-| 6   | 2:50–3:40 | How we made it       | Pipeline diagram: pack photos → AI plates and clips → post-production       | Luca      | Technical execution |
-| 7   | 3:40–4:30 | Beyond the prototype | Eight flavours, eight snaps; the friend-tag post _«A chi va l'altra metà?»_ | Alessio   | Feasibility         |
-| 8   | 4:30–5:00 | Close                | End card: logo, packshot, claim, CTA                                        | Gianpaolo | Pitch               |
+| 5   | 2:10–2:20 | Out in the world     | The three mockups: bus shelter in Turin, billboard, story on a phone        | Alessio   | Fit with the theme  |
+| 6   | 2:20–2:50 | The campaign         | Grid of the static visuals: ad image, social set, web banner, poster        | Alessio   | Fit with the theme  |
+| 7   | 2:50–3:40 | How we made it       | Pipeline diagram: pack photos → AI plates and clips → post-production       | Luca      | Technical execution |
+| 8   | 3:40–4:30 | Beyond the prototype | Eight flavours, eight snaps; the friend-tag post _«A chi va l'altra metà?»_ | Alessio   | Feasibility         |
+| 9   | 4:30–5:00 | Close                | End card: logo, packshot, claim, CTA                                        | Gianpaolo | Pitch               |
 
 ## Slide by slide
 
@@ -67,26 +68,31 @@ Speakers are a proposal; swap them as you prefer.
 - Play the spot full screen. Do not talk over it.
 - After it ends, one line: "Every image, clip and voice is AI-generated. The pack and the logo are the real ones."
 
-### 5. The campaign (0:40)
+### 5. Out in the world (0:10)
+
+- The three mockups, right after the spot: the bus shelter in Turin, the billboard, the story on a phone.
+- One line: "This is where it lives." Then move on.
+
+### 6. The campaign (0:30)
 
 - One look across every channel: daylight, flat colours from the pack, layouts split in two halves like the snap.
 - Walk the grid quickly: hero ad _«Spezzatelo. È fatto apposta.»_, range ad _«Qual è il vostro?»_, condivisione story, wheat-ear window, carousel, poster. 46 files in all, rebuilt from one script in about 40 seconds.
 - Read one headline in Italian and give its English (_«Spezzatelo. È fatto apposta.»_: "Break it. It's made for that."), then move on: don't translate them all.
 
-### 6. How we made it (0:50)
+### 7. How we made it (0:50)
 
 - Pipeline: official pack photos as references → AI keyframes and text-free plates → Veo clips with real snap sound → ElevenLabs Italian voiceover → logo, claim and CTA added in post. Name the exact tools from the [tools list](track2-tools.md).
 - The rules we gave the AI: knobbly Rubatà only, never hands shaping dough, never generated text or logo, only facts from the client kit.
 - One honest example of a problem and how we solved it (_to fill in after production_, for example a warped pack replaced by the real photo).
 
-### 7. Beyond the prototype (0:50)
+### 8. Beyond the prototype (0:50)
 
 - **A format, not a one-off:** eight flavours, eight snaps, same layout and claim.
 - **Built to spread:** _«A chi va l'altra metà?»_ invites people to post their own snap.
 - **Cheap to extend:** text-free plates mean new headlines, seasons or gift boxes are a post-production change.
 - **Ready for the client:** copy follows the brand's tone-of-voice guide and its approved CTAs.
 
-### 8. Close (0:30)
+### 9. Close (0:30)
 
 - Snap a second Rubatà, hand half to a juror if appropriate.
 - "One becomes two. That is the whole campaign."
