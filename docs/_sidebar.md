@@ -17,6 +17,7 @@
 - [AGENTHON 2026: Feyles brand and product kit](feyles-brand-and-product-kit.md)
 - [AGENTHON 2026: Track 2 concept lock](track2-concept-lock.md)
 - [AGENTHON 2026: Track 2 team brainstorm](brainstorm-track2.md)
+- [HOWTO Publish the Track 2 deliverables to Google Drive](howto-publish-to-drive.md)
 - [HOWTO Create a GitHub repository from template](howto-create-repository-from-template.md)
 
 <!-- EOF -->
