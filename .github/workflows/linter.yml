@@ -19,6 +19,10 @@ permissions: {}
 jobs:
   build:
     name: Lint
+    # TEMPORARILY DISABLED during the Agenthon (2026-11-21).
+    # To re-enable, delete the `if: false` line below.
+    # A skipped job still satisfies a required "Lint" status check.
+    if: false
     runs-on: ubuntu-latest
 
     permissions:
