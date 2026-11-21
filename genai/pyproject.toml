@@ -1,0 +1,9 @@
+[project]
+name = "agenthon-genai"
+version = "0.1.0"
+description = "Gemini, Nano Banana and Veo on Vertex AI (billed to the GCP project)"
+requires-python = ">=3.11"
+dependencies = [
+    "google-genai>=3.6.1",
+    "pillow>=13.0.0",
+]
