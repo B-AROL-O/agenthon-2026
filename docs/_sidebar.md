@@ -10,7 +10,6 @@
 - [AGENTHON 2026: Track 2 project sheet](track2-project-sheet.md)
 - [AGENTHON 2026: Track 2 pitch deck outline](track2-pitch.md)
 - [AGENTHON 2026: Track 2 pitch slide text](track2-pitch-slides.md)
-- [AGENTHON 2026: Track 2 social media captions](track2-social.md)
 - [AGENTHON 2026: Track 2 social copy deck](track2-social-copy-deck.md)
 - [AGENTHON 2026: Track 2 static visuals catalogue](track2-wp2-deliverables.md)
 - [AGENTHON 2026: Track 2 on-image catchphrases](track2-on-image-copy.md)
