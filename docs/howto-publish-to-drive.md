@@ -34,7 +34,7 @@ You need edit access to the submission folder with your own Google account.
    - Scope: `1` (full access; needed to see a folder shared with you)
    - `service_account_file`: press Enter; advanced config: `n`
    - Use a web browser to authenticate: `y`, then open the link it prints and sign in.
-     In the devcontainer, VS Code forwards port 53682, so the link opens in your normal browser.
+     In the devcontainer, Visual Studio Code forwards port 53682, so the link opens in your normal browser.
      If that fails, answer `n` instead and run `rclone authorize "drive"` on a machine with a browser, then paste the token back.
    - Shared drive: `n`; then `y` to keep the remote
 3. Check it can see the folder:
