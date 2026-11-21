@@ -20,7 +20,7 @@ The detailed brief is handed out only at kick-off, so the exact task is unknown 
 | Bring      | Own laptop and charger                                                                                           |
 | Cost       | Free                                                                                                             |
 | Our status | Applied as a team to track 2. Acceptance emails go out by 17 November                                            |
-| Rules      | Not published yet. The event page says they are coming soon                                                      |
+| Rules      | Published at kick-off, see [Track 2 challenge brief](track2-challenge.md)                                        |
 
 ## Our track: GenAI for marketing
 
