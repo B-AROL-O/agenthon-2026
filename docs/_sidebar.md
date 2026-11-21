@@ -7,6 +7,7 @@
 - [AGENTHON 2026: Track 2 timeline and WBS](track2-wbs.md)
 - [AGENTHON 2026: Track 2 tools list](track2-tools.md)
 - [AGENTHON 2026: Track 2 project sheet](track2-project-sheet.md)
+- [AGENTHON 2026: Track 2 pitch deck outline](track2-pitch.md)
 - [AGENTHON 2026: Feyles company research](feyles-company-research.md)
 - [AGENTHON 2026: Feyles deep research and benchmark](feyles-deep-research.md)
 - [AGENTHON 2026: Feyles brand and product kit](feyles-brand-and-product-kit.md)
