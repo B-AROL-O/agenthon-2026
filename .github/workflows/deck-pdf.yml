@@ -1,0 +1,53 @@
+---
+name: Pitch deck PDF
+
+on: # yamllint disable-line rule:truthy
+  release:
+    types: [published]
+  # Rebuild and replace the PDF on an existing release
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag of the release to attach the PDF to"
+        required: true
+        type: string
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.release.tag_name || inputs.tag }}
+  cancel-in-progress: false
+
+permissions: {}
+
+jobs:
+  pdf:
+    name: Export the pitch deck and attach it to the release
+    runs-on: ubuntu-latest
+
+    permissions:
+      # To upload the PDF to the release
+      contents: write
+
+    env:
+      TAG: ${{ github.event.release.tag_name || inputs.tag }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ env.TAG }}
+          persist-credentials: false
+
+      - name: Export the deck to PDF
+        env:
+          # Preinstalled on the GitHub-hosted Ubuntu runners
+          CHROME: google-chrome
+        run: scripts/deck-to-pdf.sh "build/track2-pitch-deck-${TAG}.pdf"
+
+      - name: Attach the PDF to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release upload "$TAG" "build/track2-pitch-deck-${TAG}.pdf"
+          --clobber --repo "$GITHUB_REPOSITORY"
+
+# EOF
