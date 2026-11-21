@@ -26,7 +26,7 @@ A first version of the deck built from this text is in the [HTML export](slides/
 
 ## Slide 2: The brief
 
-**Visual:** the `Il Classico` 200 g carton, official packshot, on cream.
+**Visual:** the official packshots of `Il Classico` 200 g and `Il Cioccorubatà fondente` 150 g, the product of the Christmas spot, on cream.
 
 > **The brief**
 >
@@ -55,7 +55,7 @@ A first version of the deck built from this text is in the [HTML export](slides/
 
 **Title card before playing, 1 second:**
 
-> **26 seconds. Listen to the first three.**
+> **30 seconds. A Christmas story, since 1968.**
 
 **Caption after it ends:**
 
@@ -76,24 +76,24 @@ A first version of the deck built from this text is in the [HTML export](slides/
 
 ## Slide 6: The campaign
 
-**Visual:** grid of six of the 46 static files on cream: `hero-ad-4x5`, `range-ad-4x5`, `social-condivisione-9x16`, `social-finestra-1x1`, `carousel-1`, `print-poster-2x3`.
+**Visual:** grid of six of the 80 static files on cream: `hero-ad-4x5`, `natale-ad-4x5`, `social-condivisione-9x16`, `social-finestra-1x1`, `range-completa-ad-4x5`, `print-poster-2x3`.
 Names and descriptions of every file are in the [static visuals catalogue](track2-wp2-deliverables.md).
 In the HTML deck the six images are in place, as web-sized copies of the Drive files in `docs/slides/img/`.
 
 > **One gesture, every channel**
 >
-> 46 files · Ads · Social · Web · Print
+> 80 files · Ads · Social · Web · Print
 
 **Labels under the images, small:**
 
 - Hero ad: _«Spezzatelo. È fatto apposta.»_ (Break it. It's made for that.)
-- Range ad: _«Qual è il vostro?»_ (Which one is yours?)
+- Christmas ad: _«Dal 1968 si passa di mano.»_ (Handed down since 1968.)
 - Social, condivisione: _«A chi va l'altra metà?»_ (Who gets the other half?)
 - Social, finestra: _«Dentro c'è quello che deve esserci.»_ (Inside is what should be inside.)
-- Carousel, slide 1: _«Comincia da una spiga.»_ (It starts from an ear of wheat.)
+- Full-range ad: _«Qual è il vostro?»_ (Which one is yours?)
 - Poster: _«Si divide. | Si condivide.»_ (It breaks. It's shared.)
 
-**Speaker:** one look everywhere: daylight, flat colours taken from the pack, layouts split in two like the snap. 46 files from one script, so a copy change rebuilds the whole set in about 40 seconds.
+**Speaker:** one look everywhere: daylight, flat colours taken from the pack, layouts split in two like the snap. 80 files from two scripts, the year-round set and its Christmas edition with the Cioccorubatà, so a copy change rebuilds everything in under a minute.
 
 ## Slide 7: How we made it
 
@@ -120,14 +120,14 @@ In the HTML deck the six images are in place, as web-sized copies of the Drive f
 >
 > **8 flavours, 8 snaps:** same layout, same claim.
 > **Built to spread:** _«A chi va l'altra metà?»_ invites people to post their own snap.
-> **Cheap to extend:** text-free images mean new headlines and seasons are a post-production change.
+> **Proven to extend:** the Christmas edition: same pipeline, new season, new product.
 > **Ready for the client:** written in the brand's own tone of voice.
 
-**Speaker:** what we would do next for Feyles: one spot per flavour, the friend-tag challenge, gift-box versions for the holidays.
+**Speaker:** what we would do next for Feyles: one spot per flavour and the friend-tag challenge. The Christmas edition shows how cheap a new season is: same pipeline, new plates, new headlines.
 
 ## Slide 9: Close
 
-**Visual:** the spot's end card: cream `#F9F2E9`, gold logo, `Il Classico` packshot.
+**Visual:** the end card: cream `#F9F2E9`, the gold logo between the `Il Classico` and `Il Cioccorubatà fondente` packshots.
 
 > **Si divide. Si condivide.**
 >
@@ -145,7 +145,7 @@ Keep after the close, shown only if a question needs it.
 
 > **The numbers**
 >
-> **26.5 s** spot · **8** beats · **46** static files · **6** social concepts × **3** formats · **2** formats for the spot, 16:9 and 9:16
+> **30 s** spot · **2** campaigns, year-round and Christmas · **80** static files · **10** social concepts × **3** formats · **2** formats for the spot, 16:9 and 9:16
 > **_[N]_** images generated · **_[N]_** clips generated · **_[N]_** kept
 
 <!-- EOF -->

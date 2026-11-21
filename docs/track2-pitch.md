@@ -35,7 +35,7 @@ Speakers are a proposal; swap them as you prefer.
 | 1   | 0:00–0:20 | Cold open            | Black screen, then the claim _«Si divide. Si condivide.»_                   | Gianpaolo | Pitch               |
 | 2   | 0:20–0:50 | The brief            | `Il Classico` carton; "Rubatà, for 25 to 40 year-olds, aperitivo and gifts" | Gianpaolo | Fit with the theme  |
 | 3   | 0:50–1:30 | The idea             | «dividere» = to break + to share; the snapped Rubatà image                  | Gianpaolo | Innovation          |
-| 4   | 1:30–2:10 | **Demo: the spot**   | The 26.5-second spot, full screen, with sound                               | Luca      | Technical execution |
+| 4   | 1:30–2:10 | **Demo: the spot**   | The 30-second Christmas spot, full screen, with sound                       | Luca      | Technical execution |
 | 5   | 2:10–2:20 | Out in the world     | The three mockups: bus shelter in Turin, billboard, story on a phone        | Alessio   | Fit with the theme  |
 | 6   | 2:20–2:50 | The campaign         | Grid of the static visuals: ad image, social set, web banner, poster        | Alessio   | Fit with the theme  |
 | 7   | 2:50–3:40 | How we made it       | Pipeline diagram: pack photos → AI plates and clips → post-production       | Luca      | Technical execution |
@@ -64,7 +64,7 @@ Speakers are a proposal; swap them as you prefer.
 
 ### 4. Demo: the spot (0:40)
 
-- Two lines before pressing play: "The voiceover is in Italian, the language of the people we are selling to. 26 seconds: listen to the first three."
+- Two lines before pressing play: "The voiceover is in Italian, the language of the people we are selling to. 30 seconds: a Christmas story, from 1968 to today."
 - Play the spot full screen. Do not talk over it.
 - After it ends, one line: "Every image, clip and voice is AI-generated. The pack and the logo are the real ones."
 
@@ -76,7 +76,7 @@ Speakers are a proposal; swap them as you prefer.
 ### 6. The campaign (0:30)
 
 - One look across every channel: daylight, flat colours from the pack, layouts split in two halves like the snap.
-- Walk the grid quickly: hero ad _«Spezzatelo. È fatto apposta.»_, range ad _«Qual è il vostro?»_, condivisione story, wheat-ear window, carousel, poster. 46 files in all, rebuilt from one script in about 40 seconds.
+- Walk the grid quickly: hero ad _«Spezzatelo. È fatto apposta.»_, Christmas ad _«Dal 1968 si passa di mano.»_, condivisione story, wheat-ear window, full-range ad _«Qual è il vostro?»_, poster. 80 files in all, rebuilt from two scripts in under a minute.
 - Read one headline in Italian and give its English (_«Spezzatelo. È fatto apposta.»_: "Break it. It's made for that."), then move on: don't translate them all.
 
 ### 7. How we made it (0:50)
@@ -89,7 +89,7 @@ Speakers are a proposal; swap them as you prefer.
 
 - **A format, not a one-off:** eight flavours, eight snaps, same layout and claim.
 - **Built to spread:** _«A chi va l'altra metà?»_ invites people to post their own snap.
-- **Cheap to extend:** text-free plates mean new headlines, seasons or gift boxes are a post-production change.
+- **Proven to extend:** the Christmas edition with the Cioccorubatà came from the same pipeline: new plates, new headlines, same layouts.
 - **Ready for the client:** copy follows the brand's tone-of-voice guide and its approved CTAs.
 
 ### 9. Close (0:30)
@@ -108,7 +108,7 @@ Speakers are a proposal; swap them as you prefer.
 | Why Il Cioccorubatà fondente?               | Christmas is the gift season, and the chocolate line is the gift product; the year-round set keeps `Il Classico` as hero         |
 | How much of it is AI?                       | All images, clips and voice; the idea, the copy choices and the edit are ours. See the project sheet's role of AI table          |
 | Does the Italian claim work for the target? | The target is Italian 25 to 40 year-olds; the double meaning is the hook, and the snap works even with no sound or text          |
-| What would you do next for the client?      | One spot per flavour, the friend-tag challenge on social, gift-box variants for the holidays                                     |
+| What would you do next for the client?      | One spot per flavour, the friend-tag challenge on social, a Christmas edition every year                                         |
 | Did you use ElevenLabs? (special prize)     | Yes: the Italian voiceover, with the brand's pronunciation of «Rubatà» checked                                                   |
 
 ## Checklist before 17:15
