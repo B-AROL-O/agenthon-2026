@@ -3,6 +3,7 @@
 <!-- (2026-11-21) -->
 
 Text to put on each slide of the 5-minute pitch, following the [pitch deck outline](track2-pitch.md), which has the timing, speakers and talking points.
+A first version of the deck built from this text is in the [HTML export](track2-pitch-deck.html ":ignore"): open it in a browser to see every slide with its speaker notes.
 
 - **On-screen text is in English**, so every juror can read it; campaign copy stays in Italian, with the English underneath.
   If the organizers confirm the pitch must be in one language only, translate the English lines; the Italian copy does not change.
