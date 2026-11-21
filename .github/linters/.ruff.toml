@@ -1,0 +1,13 @@
+# Configuration for Ruff (PYTHON_RUFF and PYTHON_RUFF_FORMAT), used by Super-Linter.
+# Super-Linter's default with line-length 100, so Ruff format agrees with Pylint's 100-column limit.
+cache-dir = "/tmp/.ruff_cache"
+line-length = 100
+
+[lint]
+ignore = ["E203"]
+
+[lint.isort]
+# genai/compose.py is a local module: sort it after third-party imports, as Pylint expects
+known-first-party = ["compose"]
+
+# EOF
