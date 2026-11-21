@@ -11,6 +11,7 @@
 - Market benchmark: [Feyles deep research and benchmark](docs/feyles-deep-research.md), competitive positioning, unit economics, and early discoveries
 - Brand specification: [Feyles brand and product kit](docs/feyles-brand-and-product-kit.md), verified 19-SKU catalog, HEX palette, logo rules, and tone of voice ([raw brand kit on Google Drive](https://drive.google.com/drive/folders/1GuPyFJ_Vz8jqk0EnZyB6Sah404fuGxk6), >1 GB, not stored in Git)
 - Concept lock (WP0): [Track 2 concept lock](docs/track2-concept-lock.md), «Si divide. Si condivide.» creative direction and WP1/WP2 handoff
+- Pitch deck: [Track 2 pitch deck](docs/slides/track2-pitch-deck.html) (HTML, 10 slides with speaker notes; open in a browser), with its [slide text](docs/track2-pitch-slides.md)
 - Participants: @gmacario, @aleche28, @FrigaZzz
 - See Group "[Agenthon-2026](https://t.me/+jmYqp2xPEHY2NWZk)" on Telegram
 
