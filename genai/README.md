@@ -81,6 +81,12 @@ uv run compose.py print-poster-2x3 --plate out/poster-spiga-full_<ts>_0.png --pl
 uv run compose.py social-finestra-1x1   # no AI: real Classico photo behind the official die-cut window
 ```
 
+Full submission set (46 files, about 40 s): `uv run campaign.py` rebuilds everything into `out/drive/`, already split into the Drive folders.
+Groups can be rebuilt alone: `uv run campaign.py social carousel range web print mockups`.
+It adds every concept in 9:16, 4:5 and 1:1, a six-slide carousel, the range ad, IAB display sizes, a homepage hero, a billboard, an A4 magazine page, a bus-shelter poster, a gift tag and in-context mockups.
+Mockup scenes are generated with a pure green panel (`prompts/mockup-*.txt`); `campaign.py` keys the green and warps the real file onto it.
+Post copy per channel is in [the social copy deck](../docs/track2-social-copy-deck.md).
+
 - Workflow: draft each plate on Lite at 1K, then render the approved prompt once on Full at 2K (4K for the poster).
 - `uv run compose.py --make-refs` writes `out/refs/classico-sticks-crop.jpg`, a tight crop of the kit's Classico photo with almost no slate, so the model doesn't copy the dark background. Pass it with `--ref`.
 - Scenes with people never show a readable pack: the real 3D mockup is placed as a packshot in the flat colour block.
