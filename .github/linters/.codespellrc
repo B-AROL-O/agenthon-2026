@@ -1,4 +1,4 @@
 # Configuration for codespell, used by Super-Linter (SPELL_CODESPELL).
 [codespell]
-# Italian words: product name "Tre Semi", press quotes ("un nome"), kit folder "Foto"
-ignore-words-list = tre,nome,foto
+# Italian words: product name "Tre Semi", press quotes ("un nome"), kit folder "Foto", "alle porte di Torino"
+ignore-words-list = tre,nome,foto,alle

@@ -123,4 +123,64 @@ Add to every post, for accessibility; the same text fits the three formats of a 
 | Carousel     | Sei immagini: una spiga di grano, i Rubatà che escono dal forno, un grissino spezzato, mani all'aperitivo, il negozio di piazza Castello, la confezione Il Classico. |
 | Spot, TikTok | Due mani spezzano un grissino Rubatà nodoso; amici all'aperitivo si passano i grissini dalla confezione azzurra Il Classico.                                         |
 
+## Christmas and Cioccorubatà posts
+
+Hashtags for these posts: `#Feyles` `#Rubatà` `#SiDivideSiCondivide`, plus `#Natale` `#ideeregalo` `#Cioccorubatà` by context.
+
+| Concept                      | Folder                       | Instagram feed | Stories, TikTok | Facebook feed | Carousel |
+| ---------------------------- | ---------------------------- | -------------- | --------------- | ------------- | -------- |
+| Dal 1968 (Christmas ad)      | `04-ad-image/natale-ad-*`    | 4:5            | 9:16            | 1:1           |          |
+| Si divide a Natale (tavola)  | `02-social/natale-tavola/`   | 4:5            | 9:16            | 1:1           |          |
+| Da regalare (natale-regalo)  | `02-social/natale-regalo/`   | 4:5            | 9:16            | 1:1           |          |
+| Anche il dolce si divide     | `02-social/cioccorubata/`    | 4:5            | 9:16            | 1:1           |          |
+| Qual è il vostro? (completa) | `02-social/gamma-completa/`  | 4:5            | 9:16            | 1:1           |          |
+| Dal 1968 in five slides      | `02-social/carousel-natale/` |                |                 |               | 5 × 4:5  |
+
+### Dal 1968 si passa di mano (Christmas ad)
+
+> Dal 1968 si passa di mano.
+> Il nonno ne spezza uno, la metà va al nipote. Il grissino è rimasto lo stesso.
+> Componete la vostra box regalo su grissinificiofeyles.it.
+
+### Si divide. Si condivide. (natale-tavola)
+
+> A Natale la tavola è lunga e i Rubatà fanno il giro.
+> A chi va l'altra metà? Taggatelo qui sotto.
+
+### Da regalare a chi apparecchia per tutti (natale-regalo)
+
+> Da regalare a chi apparecchia per tutti.
+> Quest'anno portate qualcosa da dividere: Rubatà e Cioccorubatà, nella box che componete voi.
+> Componete la vostra box regalo su grissinificiofeyles.it.
+
+### Anche il dolce si divide (cioccorubata)
+
+> Anche il dolce si divide.
+> I Cioccorubatà sono i nostri Rubatà all'olio d'oliva, ricoperti di cioccolato: fondente, al latte o al gianduia.
+> Il fondente ha almeno il 70% di cacao.
+> Componete la vostra box regalo su grissinificiofeyles.it.
+
+### Qual è il vostro? (gamma-completa)
+
+> Qual è il vostro?
+> Sette Rubatà da 200 g e tre Cioccorubatà da 150 g.
+> Ordinate online: spediamo in tutta Italia.
+
+### Carousel: dal 1968
+
+> Grissini Rubatà, dal 1968.
+> Una famiglia, un laboratorio, lo stesso grissino da più di cinquant'anni.
+> Scorrete fino in fondo: c'è il regalo di Natale.
+
+### Alt text for the Christmas and Cioccorubatà posts
+
+| Concept         | Alt text                                                                                                                                  |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Natale ad       | La mano di un nonno e quella di un bambino spezzano un Rubatà ricoperto di cioccolato, su fondo bordeaux.                                 |
+| Natale tavola   | Una tavola di Natale vista dall'alto: mani di tre generazioni si passano Rubatà e Cioccorubatà spezzati.                                  |
+| Natale regalo   | Sulla porta di casa, un ospite porge a una nonna un fascio di Rubatà legato con un nastro bordeaux; un bambino guarda.                    |
+| Cioccorubatà    | Le tre confezioni da 150 g dei Cioccorubatà, fondente, al latte e al gianduia, ognuna sul proprio colore.                                 |
+| Gamma completa  | Le sette confezioni da 200 g dei Rubatà e, sotto, le tre confezioni dei Cioccorubatà, ognuna sul proprio colore.                          |
+| Carousel natale | Cinque immagini: il forno del vecchio laboratorio, i Rubatà all'uscita del forno, lo stabilimento di Cambiano, il negozio, la box regalo. |
+
 <!-- EOF -->

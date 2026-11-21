@@ -100,16 +100,16 @@ Speakers are a proposal; swap them as you prefer.
 
 ## Likely questions from the jury
 
-| Question                                    | Short answer                                                                                                            |
-| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| How did you keep the pack faithful?         | Official pack photos as references for every image; text and logo never generated, always added in post                 |
-| What was hardest for the AI?                | _To fill in after production_                                                                                           |
-| Why no Christmas, if it is a gift?          | The brief is year-round aperitivo and gifting; Christmas would date the campaign                                        |
-| Why `Il Classico` only?                     | One hero pack for 26 seconds; the format extends to the other flavours                                                  |
-| How much of it is AI?                       | All images, clips and voice; the idea, the copy choices and the edit are ours. See the project sheet's role of AI table |
-| Does the Italian claim work for the target? | The target is Italian 25 to 40 year-olds; the double meaning is the hook, and the snap works even with no sound or text |
-| What would you do next for the client?      | One spot per flavour, the friend-tag challenge on social, gift-box variants for the holidays                            |
-| Did you use ElevenLabs? (special prize)     | Yes: the Italian voiceover, with the brand's pronunciation of «Rubatà» checked                                          |
+| Question                                    | Short answer                                                                                                                     |
+| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| How did you keep the pack faithful?         | Official pack photos as references for every image; text and logo never generated, always added in post                          |
+| What was hardest for the AI?                | _To fill in after production_                                                                                                    |
+| Why Christmas?                              | It carries the company's long story, from 1968 to today, with an emotional message; the year-round set runs the rest of the year |
+| Why Il Cioccorubatà fondente?               | Christmas is the gift season, and the chocolate line is the gift product; the year-round set keeps `Il Classico` as hero         |
+| How much of it is AI?                       | All images, clips and voice; the idea, the copy choices and the edit are ours. See the project sheet's role of AI table          |
+| Does the Italian claim work for the target? | The target is Italian 25 to 40 year-olds; the double meaning is the hook, and the snap works even with no sound or text          |
+| What would you do next for the client?      | One spot per flavour, the friend-tag challenge on social, gift-box variants for the holidays                                     |
+| Did you use ElevenLabs? (special prize)     | Yes: the Italian voiceover, with the brand's pronunciation of «Rubatà» checked                                                   |
 
 ## Checklist before 17:15
 

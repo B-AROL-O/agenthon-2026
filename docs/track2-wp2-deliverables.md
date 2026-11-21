@@ -99,4 +99,46 @@ Each scene was generated with a pure green panel; the code keys out the green an
 | `mockup-billboard.png`          | The billboard on a Turin street                                   |
 | `mockup-phone-story.png`        | The condivisione story on a phone at an aperitivo                 |
 
+## Christmas and Cioccorubatà extension
+
+The spot tells a Christmas story with Il Cioccorubatà fondente, to carry the company's long story (1968 to today) with an emotional message.
+The year-round set above stays as it is; these files add a Christmas campaign and the chocolate line next to it, in the same folders, with `natale`, `cioccorubata` or `gamma-completa` in every name.
+They come from `uv run natale.py` in `genai/`, which reuses the helpers of `campaign.py` and never overwrites its files.
+
+- **Look:** the same cream block, with burgundy `#7B2838` (the Cioccorubatà fondente pack colour) in place of sky blue, and burgundy pills with cream text.
+- **Packs:** the kit's 150 g Cioccorubatà mockups and the real gift box (its «Merry Christmas» is printed on the client's box; we never set our own text in that script).
+- **AI plates:** three new text-free Nano Banana 2 scenes (`genai/prompts/natale-*.txt`): a grandparent and a grandchild snapping one chocolate-coated Rubatà on burgundy, a three-generation Christmas table from above, and a Christmas doorway handover.
+- **Product truth:** Cioccorubatà is Rubatà made with olive oil, coated in chocolate (the fondente has at least 70% cocoa), so the strutto check does not apply; every fact is from the kit's texts.
+
+### 04-ad-image
+
+| File                           | What it shows                                                                                                     | Purpose                                                                           |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| `natale-ad-{4x5,1x1,9x16}.png` | A grandparent's hand and a child's hand snap one Cioccorubatà on burgundy; «Dal 1968 si passa di mano.», gift CTA | **The Christmas ad.** The same gesture as the hero ad, passed between generations |
+| `cioccorubata-ad-4x5.png`      | The three Cioccorubatà cartons on their pack colours; «Anche il dolce si divide.»                                 | Ad for the chocolate line                                                         |
+| `range-completa-ad-4x5.png`    | The seven 200 g Rubatà on top, the three Cioccorubatà below; «Qual è il vostro?»                                  | Full-range ad, including the chocolate line                                       |
+
+### 02-social
+
+| Folder             | Files                                      | What it shows                                                                                          | Made with                  |
+| ------------------ | ------------------------------------------ | ------------------------------------------------------------------------------------------------------ | -------------------------- |
+| `natale-tavola/`   | `social-natale-tavola-{9x16,4x5,1x1}.png`  | A Christmas table from above, three generations passing halves; claim and «A chi va l'altra metà?»     | AI scene + kit             |
+| `natale-regalo/`   | `social-natale-regalo-{9x16,4x5,1x1}.png`  | A guest hands a Rubatà bundle to a grandmother at the door; «Da regalare a chi apparecchia per tutti.» | AI scene + kit             |
+| `cioccorubata/`    | `social-cioccorubata-{9x16,4x5,1x1}.png`   | The three Cioccorubatà on their colours; «Anche il dolce si divide.» and the product facts             | **No AI:** kit mockups     |
+| `gamma-completa/`  | `social-gamma-completa-{9x16,4x5,1x1}.png` | Seven Rubatà and three Cioccorubatà, in two tiers; «Qual è il vostro?»                                 | **No AI:** kit mockups     |
+| `carousel-natale/` | `carousel-natale-{1..5}.png`               | The story from 1968: the old oven, the oven exit, Cambiano, piazza Castello, the gift box              | **No AI:** real kit photos |
+
+The carousel lines are the brand's own sentences: «Grissini Rubatà, dal 1968.», «Una famiglia, un laboratorio, lo stesso grissino da più di cinquant'anni.», «Dal laboratorio di Cambiano, alle porte di Torino, a casa vostra.»
+
+### 03-web-print
+
+| File                                                      | What it shows                                                             |
+| --------------------------------------------------------- | ------------------------------------------------------------------------- |
+| `web/web-banner-natale-16x9.png`                          | The Christmas doorway, gift box and fondente pack, gift CTA               |
+| `web/web-banner-gamma-completa-16x9.png`                  | The full range in two tiers                                               |
+| `web/display-natale-{300x250,300x600,728x90,320x100}.png` | The Christmas gift message in the four IAB sizes                          |
+| `print/bus-shelter-natale-120x176.pdf`, `.png`            | The Christmas ad as a bus-shelter poster                                  |
+| `print/magazine-natale-a4.pdf`, `.png`                    | The Christmas doorway with body copy on the Cioccorubatà fondente         |
+| `print/gift-tag-natale-55x95mm.pdf`, `.png`               | Front: white logo on burgundy. Back: «Buon Natale da dividere con ______» |
+
 <!-- EOF -->
