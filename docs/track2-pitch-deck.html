@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Si divide. Si condivide. Pitch</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&amp;display=swap"
+    />
+    <style>
+      :root {
+        --ink: #1b2630;
+        --soft: #3d4b57;
+        --cream: #f9f2e9;
+        --sky: #8dc6e8;
+        --yellow: #f9c86a;
+        --night: #14181c;
+        --paper: #f4efe6;
+        --mist: #c9d1d8;
+      }
+
+      section {
+        padding: 128px;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: "Lato", Arial, sans-serif;
+        font-size: 32px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      section.sky {
+        background: var(--sky);
+      }
+      section.night {
+        background: var(--night);
+        color: var(--paper);
+      }
+      section.center {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", Georgia, serif;
+        font-weight: 700;
+        color: var(--ink);
+      }
+      h1 {
+        font-size: 140px;
+        line-height: 1.05;
+      }
+      h2 {
+        font-size: 80px;
+        line-height: 1.1;
+      }
+      h3 {
+        font-size: 44px;
+        line-height: 1.15;
+      }
+      p {
+        font-size: 32px;
+        line-height: 1.35;
+      }
+
+      .night h1,
+      .night h2 {
+        color: var(--paper);
+      }
+
+      .eyebrow {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--soft);
+        margin-bottom: 24px;
+      }
+      .night .eyebrow {
+        color: var(--mist);
+      }
+
+      .sub {
+        font-family: "Playfair Display", Georgia, serif;
+        font-style: italic;
+        font-size: 44px;
+        color: var(--soft);
+        margin-top: 32px;
+      }
+
+      .footer {
+        position: absolute;
+        left: 128px;
+        bottom: 64px;
+        width: 1664px;
+        font-size: 24px;
+        color: var(--soft);
+      }
+
+      /* Image placeholders: replace with the team's visuals */
+      .ph {
+        border: 3px dashed #6b7884;
+        border-radius: 16px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .ph .ph-label {
+        font-size: 24px;
+        color: var(--soft);
+      }
+      .night .ph {
+        border-color: var(--mist);
+      }
+      .night .ph .ph-label {
+        color: var(--mist);
+      }
+
+      /* Brief */
+      .two-col {
+        display: flex;
+        gap: 96px;
+        flex: 1;
+        align-items: center;
+      }
+      .two-col .text {
+        flex: 1;
+      }
+      .facts {
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .facts p {
+        font-size: 32px;
+        color: var(--soft);
+      }
+      .facts .k {
+        color: var(--ink);
+      }
+
+      /* Idea */
+      .half {
+        position: absolute;
+        top: 0;
+        height: 1080px;
+        width: 960px;
+      }
+      .half.left {
+        left: 0;
+        background: var(--sky);
+      }
+      .half.right {
+        left: 960px;
+        background: var(--cream);
+      }
+      .idea {
+        position: relative;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .idea h1 {
+        text-align: center;
+      }
+      .meanings {
+        display: flex;
+        margin-top: 56px;
+      }
+      .meanings p {
+        width: 832px;
+        text-align: center;
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 80px;
+        font-weight: 700;
+      }
+      .idea .tagline {
+        text-align: center;
+        margin-top: 56px;
+        font-size: 44px;
+        color: var(--soft);
+      }
+
+      /* Spot */
+      .spot-note {
+        margin-top: 48px;
+        font-size: 32px;
+        color: var(--mist);
+      }
+      .fragment {
+        opacity: 0;
+      }
+      .fragment.visible {
+        opacity: 1;
+        transition: opacity 400ms ease-out;
+      }
+      .caption {
+        margin-top: 72px;
+        font-size: 44px;
+        color: var(--paper);
+      }
+
+      /* Campaign grid */
+      .grid3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        margin-top: 40px;
+      }
+      .grid3 .ph {
+        align-items: flex-start;
+        text-align: left;
+        justify-content: flex-start;
+        min-height: 240px;
+      }
+      .grid3 .ph .ph-label {
+        font-weight: 700;
+      }
+      .quote {
+        font-family: "Playfair Display", Georgia, serif;
+        font-style: italic;
+        font-size: 32px;
+        color: var(--ink);
+        margin-top: 8px;
+      }
+      .gloss {
+        font-size: 24px;
+        color: var(--soft);
+        margin-top: 4px;
+      }
+
+      /* Pipeline */
+      .steps {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-top: 56px;
+      }
+      .step {
+        flex: 1;
+        background: #fffaf3;
+        border: 2px solid var(--sky);
+        border-radius: 16px;
+        padding: 32px;
+      }
+      .step .num {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: var(--soft);
+      }
+      .step .title {
+        font-family: "Playfair Display", Georgia, serif;
+        font-weight: 700;
+        font-size: 32px;
+        margin-top: 8px;
+      }
+      .step .desc {
+        font-size: 24px;
+        color: var(--soft);
+        margin-top: 12px;
+      }
+      .arrow {
+        width: 56px;
+        height: 28px;
+        background: var(--soft);
+      }
+      .rules {
+        margin-top: 56px;
+        background: var(--yellow);
+        border-radius: 16px;
+        padding: 32px 40px;
+      }
+      .rules p {
+        font-size: 32px;
+        color: var(--ink);
+      }
+
+      /* Beyond */
+      .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        margin-top: 48px;
+      }
+      .card {
+        background: var(--cream);
+        border-radius: 16px;
+        padding: 40px;
+      }
+      .card .body {
+        font-size: 32px;
+        color: var(--soft);
+        margin-top: 12px;
+      }
+
+      /* Close */
+      .endcard {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .pill {
+        margin-top: 56px;
+        background: var(--sky);
+        color: var(--ink);
+        border-radius: 999px;
+        padding: 16px 40px;
+        font-size: 32px;
+        font-weight: 700;
+      }
+      .logo-ph {
+        width: 360px;
+        height: 120px;
+        margin-bottom: 48px;
+      }
+
+      /* Numbers */
+      .stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 32px;
+        margin-top: 56px;
+      }
+      .stat .big {
+        font-family: "Playfair Display", Georgia, serif;
+        font-weight: 700;
+        font-size: 80px;
+        color: var(--ink);
+      }
+      .stat .label {
+        font-size: 24px;
+        color: var(--soft);
+        margin-top: 8px;
+      }
+
+      /* Arrival motion */
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(24px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .rise {
+        animation: rise 600ms ease-out both;
+        animation-delay: calc(var(--i, 0) * 150ms);
+      }
+
+      /* Export page: each slide is a 1920x1080 canvas scaled to the page width */
+      html {
+        background: #2b3036;
+      }
+      body {
+        margin: 0;
+        padding: 32px 16px 64px;
+        font-family: "Lato", Arial, sans-serif;
+        color: #e9eef2;
+      }
+      .export-header {
+        max-width: 1200px;
+        margin: 0 auto 24px;
+      }
+      .export-header h1 {
+        font-size: 28px;
+        line-height: 1.2;
+        color: #f4efe6;
+      }
+      .export-header p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #c9d1d8;
+      }
+      .slide-wrap {
+        max-width: 1200px;
+        margin: 0 auto 40px;
+      }
+      .slide-num {
+        font-size: 14px;
+        color: #c9d1d8;
+        margin: 0 0 8px;
+      }
+      .stage {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+      .stage > section {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1920px;
+        height: 1080px;
+        box-sizing: border-box;
+        overflow: hidden;
+        transform-origin: 0 0;
+        transform: scale(var(--s, 0.625));
+      }
+      .stage h1,
+      .stage h2,
+      .stage h3,
+      .stage p {
+        margin: 0;
+      }
+      .stage .fragment {
+        opacity: 1;
+      }
+      .stage .arrow {
+        display: block;
+        flex: none;
+        clip-path: polygon(
+          0 32%,
+          61% 32%,
+          61% 0,
+          100% 50%,
+          61% 100%,
+          61% 68%,
+          0 68%
+        );
+      }
+      .notes {
+        font-size: 15px;
+        line-height: 1.5;
+        color: #c9d1d8;
+        margin: 12px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="export-header">
+      <h1>Si divide. Si condivide. Pitch</h1>
+      <p>
+        HTML export of the Track 2 pitch deck, version 1, with speaker notes
+        under each slide. Dashed boxes and text in [brackets] are placeholders
+        to fill in after production.
+      </p>
+    </header>
+    <main>
+      <div class="slide-wrap">
+        <p class="slide-num">Slide 1 of 9</p>
+        <div class="stage">
+          <section id="cover" class="sky center" data-transition="fade">
+            <h1 class="rise">Si divide. Si condivide.</h1>
+            <p class="sub rise" style="--i: 2">It breaks. It’s shared.</p>
+            <p class="footer">
+              Team Macario · Track 2, GenAI for marketing · Feyles Rubatà
+            </p>
+          </section>
+        </div>
+        <p class="notes">
+          <b>Speaker notes:</b> Before this slide appears: snap a real Rubatà in
+          front of the microphone. Pause. Then: “In Italian, «dividere» means
+          two things: to break, and to share.” Show the claim.
+        </p>
+      </div>
+      <div class="slide-wrap">
+        <p class="slide-num">Slide 2 of 9</p>
+        <div class="stage">
+          <section id="brief">
+            <div class="two-col">
+              <div class="text">
+                <p class="eyebrow">The brief</p>
+                <h2>
+                  Make the Rubatà the star of aperitivo at home, and a gift that
+                  stands out.
+                </h2>
+                <div class="facts">
+                  <p><b class="k">For</b> 25 to 40 year-olds</p>
+                  <p>
+                    <b class="k">Deliver</b> a 20–30 s spot, social, web and
+                    print
+                  </p>
+                </div>
+              </div>
+              <div class="ph" style="width: 560px; height: 720px">
+                <p class="ph-label">
+                  [Image: Il Classico 200 g carton, official packshot]
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <p class="notes">
+          <b>Speaker notes:</b> Feyles makes Rubatà, the knobbly rolled
+          breadsticks of Piedmont, in Cambiano since 1968. The brief: make the
+          grissino the star of aperitivo at home and a gift idea, for 25 to 40
+          year-olds, with a 20 to 30 second spot, social, web and print visuals.
+          The trap: explaining “sharing” with words, or showing a generic
+          aperitivo where the product is a prop.
+        </p>
+      </div>
+      <div class="slide-wrap">
+        <p class="slide-num">Slide 3 of 9</p>
+        <div class="stage">
+          <section id="idea" class="sky">
+            <div class="half left"></div>
+            <div class="half right"></div>
+            <div class="idea">
+              <p class="eyebrow" style="text-align: center">The idea</p>
+              <h1 class="rise">«dividere»</h1>
+              <div class="meanings">
+                <p class="rise" style="--i: 2">to break</p>
+                <p class="rise" style="--i: 3">to share</p>
+              </div>
+              <p class="tagline rise" style="--i: 5">One gesture does both.</p>
+            </div>
+          </section>
+        </div>
+        <p class="notes">
+          <b>Speaker notes:</b> A Rubatà does both meanings of «dividere» in one
+          gesture: snap it in half, and you are already handing the other half
+          to someone. So we don’t explain sharing: we show the snap. One becomes
+          two. It uses all three things the brief asked for: the shape, the
+          crunch, the act of sharing. [Optional: replace the split background
+          with the photo of a snapped Rubatà across the two halves.]
+        </p>
+      </div>
+      <div class="slide-wrap">
+        <p class="slide-num">Slide 4 of 9</p>
+        <div class="stage">
+          <section id="spot" class="night center">
+            <p class="eyebrow">The spot</p>
+            <h2>26 seconds. Listen to the first three.</h2>
+            <p class="spot-note">
+              [Switch to the spot file, full screen with sound, then come back]
+            </p>
+            <p class="caption fragment">
+              Every image, clip and voice made with AI.<br />The pack and the
+              logo are the real ones.
+            </p>
+          </section>
+        </div>
+        <p class="notes">
+          <b>Speaker notes:</b> Say only: “26 seconds. Listen to the first
+          three.” Switch to the spot file playing full screen from the laptop
+          (VLC or QuickTime), not streamed. Don’t talk over it. Come back and
+          click once to show the caption, then say it: every image, clip and
+          voice is AI-generated; the pack and the logo are the real ones.
+        </p>
+      </div>
+      <div class="slide-wrap">
+        <p class="slide-num">Slide 5 of 9</p>
+        <div class="stage">
+          <section id="campaign">
+            <p class="eyebrow">
+              The campaign · Ad · Instagram and TikTok · Web · Print
+            </p>
+            <h2>One gesture, every channel</h2>
+            <div class="grid3">
+              <div class="ph">
+                <p class="ph-label">[Ad image, 4:5]</p>
+                <p class="quote">«Spezzatelo. È fatto apposta.»</p>
+                <p class="gloss">Break it. It’s made for that.</p>
+              </div>
+              <div class="ph">
+                <p class="ph-label">[Instagram Story, 9:16]</p>
+                <p class="quote">«A chi va l’altra metà?»</p>
+                <p class="gloss">Who gets the other half?</p>
+              </div>
+              <div class="ph">
+                <p class="ph-label">[Wheat-ear window, 1:1]</p>
+                <p class="quote">«Dentro c’è quello che deve esserci.»</p>
+                <p class="gloss">Inside is what should be inside.</p>
+              </div>
+              <div class="ph">
+                <p class="ph-label">[Turin arcades, 4:5]</p>
+                <p class="quote">
+                  «A Torino le cose buone non si dicono in giro.»
+                </p>
+                <p class="gloss">In Turin, good things aren’t talked about.</p>
+              </div>
+              <div class="ph">
+                <p class="ph-label">[Web banner, 16:9]</p>
+                <p class="quote">«Portate qualcosa da dividere.»</p>
+                <p class="gloss">Bring something to share.</p>
+              </div>
+              <div class="ph">
+                <p class="ph-label">[Print poster, 2:3]</p>
+                <p class="quote">«Si divide. Si condivide.»</p>
+                <p class="gloss">It breaks. It’s shared.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <p class="notes">
+          <b>Speaker notes:</b> One look across every channel: daylight, flat
+          colours taken from the pack, layouts split in two halves like the
+          snap. Walk the grid quickly. Replace each placeholder with Alessio’s
+          final image, keeping its headline label underneath.
+        </p>
+      </div>
+      <div class="slide-wrap">
+        <p class="slide-num">Slide 6 of 9</p>
+        <div class="stage">
+          <section id="pipeline">
+            <p class="eyebrow">How we made it</p>
+            <h2>Real pack in, AI in the middle, real logo out</h2>
+            <div class="steps">
+              <div class="step">
+                <p class="num">STEP 1</p>
+                <p class="title">Real pack photos</p>
+                <p class="desc">References for every image</p>
+              </div>
+              <i class="arrow" aria-hidden="true"></i>
+              <div class="step">
+                <p class="num">STEP 2</p>
+                <p class="title">AI images and clips</p>
+                <p class="desc">
+                  Nano Banana 2 and Google Veo 3.1 on Vertex AI, with real snap
+                  sounds
+                </p>
+              </div>
+              <i class="arrow" aria-hidden="true"></i>
+              <div class="step">
+                <p class="num">STEP 3</p>
+                <p class="title">AI voice</p>
+                <p class="desc">
+                  ElevenLabs: Italian voiceover, music and sound effects
+                </p>
+              </div>
+              <i class="arrow" aria-hidden="true"></i>
+              <div class="step">
+                <p class="num">STEP 4</p>
+                <p class="title">Post-production</p>
+                <p class="desc">
+                  Real logo, claim and CTA composited with Python, never
+                  generated
+                </p>
+              </div>
+            </div>
+            <div class="rules">
+              <p>
+                <b>Rules we gave the AI:</b> knobbly Rubatà only · no hands
+                shaping dough · no generated text or logo · only facts from the
+                client kit
+              </p>
+            </div>
+          </section>
+        </div>
+        <p class="notes">
+          <b>Speaker notes:</b> Walk the four steps: Nano Banana 2 for keyframes
+          and plates, Veo 3.1 for the clips, ElevenLabs for voice, music and
+          effects, Gemini as a quality check, then FFmpeg, HyperFrames and
+          Pillow for the edit and compositing. Then one honest example of a
+          problem and how we solved it: [to fill in after production, for
+          example a warped pack replaced with the real photo].
+        </p>
+      </div>
+      <div class="slide-wrap">
+        <p class="slide-num">Slide 7 of 9</p>
+        <div class="stage">
+          <section id="beyond" class="sky">
+            <p class="eyebrow">Beyond the prototype</p>
+            <h2>A format, not a one-off</h2>
+            <div class="grid2">
+              <div class="card">
+                <h3>8 flavours, 8 snaps</h3>
+                <p class="body">
+                  Same layout, same claim, one spot per flavour.
+                </p>
+              </div>
+              <div class="card">
+                <h3>Built to spread</h3>
+                <p class="body">
+                  «A chi va l’altra metà?» invites people to post their own
+                  snap.
+                </p>
+              </div>
+              <div class="card">
+                <h3>Cheap to extend</h3>
+                <p class="body">
+                  Text-free images: new headlines and seasons are a
+                  post-production change.
+                </p>
+              </div>
+              <div class="card">
+                <h3>Ready for the client</h3>
+                <p class="body">
+                  Written in the brand’s own tone of voice, with its approved
+                  calls to action.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <p class="notes">
+          <b>Speaker notes:</b> What we would do next for Feyles: one spot per
+          flavour, the friend-tag challenge on social, gift-box versions for the
+          holidays.
+        </p>
+      </div>
+      <div class="slide-wrap">
+        <p class="slide-num">Slide 8 of 9</p>
+        <div class="stage">
+          <section id="close">
+            <div class="endcard">
+              <div class="ph logo-ph">
+                <p class="ph-label">
+                  [Gold Feyles logo + Il Classico packshot]
+                </p>
+              </div>
+              <h1 class="rise">Si divide. Si condivide.</h1>
+              <p class="sub rise" style="--i: 2">
+                Uno diventa due. One becomes two.
+              </p>
+              <p class="pill rise" style="--i: 4">
+                Scoprite gli otto gusti · grissinificiofeyles.it
+              </p>
+            </div>
+            <p class="footer">
+              Team Macario: Gianpaolo Macario · Alessio Chessa · Luca Frigato
+            </p>
+          </section>
+        </div>
+        <p class="notes">
+          <b>Speaker notes:</b> Snap a second Rubatà; hand half to a juror if it
+          feels right. “One becomes two. That is the whole campaign.” Thank the
+          jury and invite questions.
+        </p>
+      </div>
+      <div class="slide-wrap">
+        <p class="slide-num">Slide 9 of 9</p>
+        <div class="stage">
+          <section id="numbers">
+            <p class="eyebrow">Backup · for questions</p>
+            <h2>The numbers</h2>
+            <div class="stats">
+              <div class="stat">
+                <p class="big">26.5 s</p>
+                <p class="label">spot length</p>
+              </div>
+              <div class="stat">
+                <p class="big">8</p>
+                <p class="label">beats in the spot</p>
+              </div>
+              <div class="stat">
+                <p class="big">6</p>
+                <p class="label">static visuals</p>
+              </div>
+              <div class="stat">
+                <p class="big">2</p>
+                <p class="label">spot formats, 16:9 and 9:16</p>
+              </div>
+              <div class="stat">
+                <p class="big">[N]</p>
+                <p class="label">images generated</p>
+              </div>
+              <div class="stat">
+                <p class="big">[N]</p>
+                <p class="label">clips generated</p>
+              </div>
+              <div class="stat">
+                <p class="big">[N]</p>
+                <p class="label">takes kept</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <p class="notes">
+          <b>Speaker notes:</b> Show only if a question needs it. Fill in the
+          [N] counts after production.
+        </p>
+      </div>
+    </main>
+    <script>
+      const fit = () => {
+        for (const s of document.querySelectorAll(".stage")) {
+          s.style.setProperty("--s", String(s.clientWidth / 1920));
+        }
+      };
+      window.addEventListener("resize", fit);
+      fit();
+    </script>
+  </body>
+</html>
