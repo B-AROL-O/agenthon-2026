@@ -3,6 +3,10 @@
 - Link: <https://agenthon.gdgtorino.it/>
 - Where: [Feat. House](https://feat.house/), Via Giuseppe Giacosa 15, 10125 Torino
 - When: 2026-11-21
+- Event: "Build with AI" Agenthon, hackathon organised by [GDG Torino](https://gdg.community.dev/gdg-torino/) (waiting for DevFest Alps)
+- Participant portal: <(participant portal)>
+- Sponsors: Ariete Tech, demetra
+- Our track: [Track 2 challenge brief](docs/track2-challenge.md), GenAI for marketing (deliverables due at 17:00)
 - Participants: @gmacario, @aleche28, @FrigaZzz
 - See Group "[Agenthon-2026]((private Telegram group))" on Telegram
 
