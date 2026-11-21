@@ -426,8 +426,18 @@
       .stage .fragment {
         opacity: 1;
       }
-      .stage svg.arrow {
-        background: none;
+      .stage .arrow {
+        display: block;
+        flex: none;
+        clip-path: polygon(
+          0 32%,
+          61% 32%,
+          61% 0,
+          100% 50%,
+          61% 100%,
+          61% 68%,
+          0 68%
+        );
       }
       .notes {
         font-size: 15px;
@@ -612,15 +622,7 @@
                 <p class="title">Real pack photos</p>
                 <p class="desc">References for every image</p>
               </div>
-              <svg
-                class="arrow"
-                viewBox="0 0 56 28"
-                width="56"
-                height="28"
-                aria-hidden="true"
-              >
-                <path d="M0 9h34V0l22 14-22 14v-9H0z" fill="#3d4b57" />
-              </svg>
+              <i class="arrow" aria-hidden="true"></i>
               <div class="step">
                 <p class="num">STEP 2</p>
                 <p class="title">AI images and clips</p>
@@ -629,15 +631,7 @@
                   sounds
                 </p>
               </div>
-              <svg
-                class="arrow"
-                viewBox="0 0 56 28"
-                width="56"
-                height="28"
-                aria-hidden="true"
-              >
-                <path d="M0 9h34V0l22 14-22 14v-9H0z" fill="#3d4b57" />
-              </svg>
+              <i class="arrow" aria-hidden="true"></i>
               <div class="step">
                 <p class="num">STEP 3</p>
                 <p class="title">AI voice</p>
@@ -645,15 +639,7 @@
                   ElevenLabs: Italian voiceover, music and sound effects
                 </p>
               </div>
-              <svg
-                class="arrow"
-                viewBox="0 0 56 28"
-                width="56"
-                height="28"
-                aria-hidden="true"
-              >
-                <path d="M0 9h34V0l22 14-22 14v-9H0z" fill="#3d4b57" />
-              </svg>
+              <i class="arrow" aria-hidden="true"></i>
               <div class="step">
                 <p class="num">STEP 4</p>
                 <p class="title">Post-production</p>
