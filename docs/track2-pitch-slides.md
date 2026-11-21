@@ -66,21 +66,25 @@ A first version of the deck built from this text is in the [HTML export](slides/
 
 ## Slide 5: The campaign
 
-**Visual:** grid of the static visuals on cream: `hero-ad-4x5`, `social-story-9x16`, `social-finestra-1x1`, `social-torino-4x5`, `web-banner-16x9`, `print-poster-2x3`.
+**Visual:** grid of six of the 46 static files on cream: `hero-ad-4x5`, `range-ad-4x5`, `social-condivisione-9x16`, `social-finestra-1x1`, `carousel-1`, `print-poster-2x3`.
+Names and descriptions of every file are in the [static visuals catalogue](track2-wp2-deliverables.md).
 
 > **One gesture, every channel**
 >
-> Ad · Instagram and TikTok · Web · Print
+> 46 files · Ads · Social · Web · Print
 
 **Labels under the images, small:**
 
-- _«Spezzatelo. È fatto apposta.»_ (Break it. It's made for that.)
-- _«A chi va l'altra metà?»_ (Who gets the other half?)
-- _«Dentro c'è quello che deve esserci.»_ (Inside is what should be inside.)
-- _«A Torino le cose buone non si dicono in giro.»_ (In Turin, good things aren't talked about.)
-- _«Portate qualcosa da dividere.»_ (Bring something to share.)
+- Hero ad: _«Spezzatelo. È fatto apposta.»_ (Break it. It's made for that.)
+- Range ad: _«Qual è il vostro?»_ (Which one is yours?)
+- Social, condivisione: _«A chi va l'altra metà?»_ (Who gets the other half?)
+- Social, finestra: _«Dentro c'è quello che deve esserci.»_ (Inside is what should be inside.)
+- Carousel, slide 1: _«Comincia da una spiga.»_ (It starts from an ear of wheat.)
+- Poster: _«Si divide. | Si condivide.»_ (It breaks. It's shared.)
 
-**Speaker:** one look everywhere: daylight, flat colours taken from the pack, layouts split in two like the snap.
+**Speaker:** one look everywhere: daylight, flat colours taken from the pack, layouts split in two like the snap. 46 files from one script, so a copy change rebuilds the whole set in about 40 seconds.
+
+**Optional, strong for the demo:** right after the spot, one slide with the three mockups in `03-web-print/mockups/`: the bus shelter in Turin, the billboard and the story on a phone.
 
 ## Slide 6: How we made it
 
@@ -132,7 +136,7 @@ Keep after the close, shown only if a question needs it.
 
 > **The numbers**
 >
-> **26.5 s** spot · **8** beats · **6** static visuals · **2** formats for the spot, 16:9 and 9:16
+> **26.5 s** spot · **8** beats · **46** static files · **6** social concepts × **3** formats · **2** formats for the spot, 16:9 and 9:16
 > **_[N]_** images generated · **_[N]_** clips generated · **_[N]_** kept
 
 <!-- EOF -->
