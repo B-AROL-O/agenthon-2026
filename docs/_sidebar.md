@@ -4,6 +4,7 @@
 
 - [Home](/)
 - [AGENTHON 2026: Track 2 challenge brief](track2-challenge.md)
+- [AGENTHON 2026: Track 2 deliverables](deliverables.md)
 - [AGENTHON 2026: Track 2 timeline and WBS](track2-wbs.md)
 - [AGENTHON 2026: Track 2 tools list](track2-tools.md)
 - [AGENTHON 2026: Track 2 project sheet](track2-project-sheet.md)
