@@ -1,3 +1,5 @@
+# Layout functions place many elements by coordinates; splitting them would hurt readability.
+# pylint: disable=too-many-locals,too-many-arguments,too-many-positional-arguments
 """WP2 compositor: put real logos, brand typography and CTAs on text-free AI plates.
 
 Generated plates never contain text or logos (see docs/track2-concept-lock.md).
@@ -78,7 +80,7 @@ def font(kind: str, size: int) -> ImageFont.FreeTypeFont:
 def cover(img: Image.Image, w: int, h: int, focus: tuple[float, float] = (0.5, 0.5)) -> Image.Image:
     """Scale and crop img to fill w x h, keeping the focus point (fractions) in frame."""
     scale = max(w / img.width, h / img.height)
-    r = img.resize((round(img.width * scale), round(img.height * scale)), Image.LANCZOS)
+    r = img.resize((round(img.width * scale), round(img.height * scale)), Image.Resampling.LANCZOS)
     x = min(max(round(r.width * focus[0] - w / 2), 0), r.width - w)
     y = min(max(round(r.height * focus[1] - h / 2), 0), r.height - h)
     return r.crop((x, y, x + w, y + h))
@@ -87,7 +89,7 @@ def cover(img: Image.Image, w: int, h: int, focus: tuple[float, float] = (0.5, 0
 def paste_width(canvas: Image.Image, path: Path, width: int, xy: tuple[int, int], anchor="mm"):
     """Paste a transparent PNG scaled to width; anchor like Pillow text anchors (l/m/r + t/m/b)."""
     im = Image.open(path).convert("RGBA")
-    im = im.resize((width, round(im.height * width / im.width)), Image.LANCZOS)
+    im = im.resize((width, round(im.height * width / im.width)), Image.Resampling.LANCZOS)
     x, y = xy
     x -= {"l": 0, "m": im.width // 2, "r": im.width}[anchor[0]]
     y -= {"t": 0, "m": im.height // 2, "b": im.height}[anchor[1]]
@@ -95,7 +97,7 @@ def paste_width(canvas: Image.Image, path: Path, width: int, xy: tuple[int, int]
     return im.size
 
 
-def lockup(  # pylint: disable=too-many-arguments,too-many-positional-arguments
+def lockup(
     canvas: Image.Image,
     colour: str,
     logo_w: int,
@@ -109,7 +111,7 @@ def lockup(  # pylint: disable=too-many-arguments,too-many-positional-arguments
     sides (F is ~25% of the logo width). Returns the bounding box (l, t, r, b).
     """
     logo = Image.open(logo_path(colour)).convert("RGBA")
-    logo = logo.resize((logo_w, round(logo.height * logo_w / logo.width)), Image.LANCZOS)
+    logo = logo.resize((logo_w, round(logo.height * logo_w / logo.width)), Image.Resampling.LANCZOS)
     f_h = round(logo_w * 0.25)
     claim = font("title-italic", round(logo_w * 0.135))
     lines = ["Si divide.", "Si condivide."]
@@ -131,7 +133,7 @@ def lockup(  # pylint: disable=too-many-arguments,too-many-positional-arguments
     return (x, y, x + total_w, y + h)
 
 
-def text_block(  # pylint: disable=too-many-arguments,too-many-positional-arguments
+def text_block(
     draw: ImageDraw.ImageDraw,
     lines: list[str],
     fnt: ImageFont.FreeTypeFont,
@@ -149,7 +151,7 @@ def text_block(  # pylint: disable=too-many-arguments,too-many-positional-argume
     return y + len(lines) * step
 
 
-def pill(  # pylint: disable=too-many-arguments,too-many-positional-arguments
+def pill(
     canvas: Image.Image,
     label: str,
     centre: tuple[int, int],
@@ -173,12 +175,13 @@ def border_colour(img: Image.Image, margin: int = 12) -> tuple[int, int, int]:
     w, h = rgb.size
     strips = [(0, 0, w, margin), (0, h - margin, w, h), (0, 0, margin, h), (w - margin, 0, w, h)]
     px = [p for box in strips for p in rgb.crop(box).get_flattened_data()]
-    return tuple(sorted(c[i] for c in px)[len(px) // 2] for i in range(3))
+    r, g, b = (sorted(c[i] for c in px)[len(px) // 2] for i in range(3))
+    return (r, g, b)
 
 
 def hex_rgb(colour: str) -> tuple[int, int, int]:
     """'#RRGGBB' -> (r, g, b)."""
-    return tuple(int(colour[i : i + 2], 16) for i in (1, 3, 5))
+    return (int(colour[1:3], 16), int(colour[3:5], 16), int(colour[5:7], 16))
 
 
 def match_backdrop(img: Image.Image, target: str) -> Image.Image:
@@ -208,7 +211,7 @@ def tile(
 ):
     """Tile a pattern PNG into box at the given tile width and opacity."""
     t = Image.open(path).convert("RGBA")
-    t = t.resize((width, round(t.height * width / t.width)), Image.LANCZOS)
+    t = t.resize((width, round(t.height * width / t.width)), Image.Resampling.LANCZOS)
     t.putalpha(t.getchannel("A").point(lambda v: round(v * opacity)))
     layer = Image.new("RGBA", (box[2] - box[0], box[3] - box[1]), (0, 0, 0, 0))
     for y in range(0, layer.height, t.height):
@@ -245,7 +248,7 @@ SPECS = {
 
 
 def first_dark_row(img: Image.Image, start: int, drop: float = 0.94) -> int:
-    """First row below start whose mean luminance falls under drop x the start row's (leaked backdrop)."""
+    """First row below start whose mean luminance drops under drop x the start row's."""
     grey = img.convert("L")
 
     def lum(y: int) -> float:
@@ -305,14 +308,14 @@ def print_poster_2x3(plates: list[Image.Image], _variant: str) -> Image.Image:
     spiga = key_out(plates[0])
     spiga = spiga.crop(spiga.getchannel("A").getbbox())
     sh = 3500
-    spiga = spiga.resize((round(spiga.width * sh / spiga.height), sh), Image.LANCZOS)
+    spiga = spiga.resize((round(spiga.width * sh / spiga.height), sh), Image.Resampling.LANCZOS)
     c.alpha_composite(spiga, (col // 2 - spiga.width // 2, 420))
 
     box = key_out(plates[1], 18, 40).getchannel("A").getbbox()
     focus = ((box[0] + box[2]) / 2 / plates[1].width, (box[1] + box[3]) / 2 / plates[1].height)
     rubata = cover(match_backdrop(plates[1], CREAM), col, 4300, focus).convert("RGBA")
     fade = 700  # feather the plate's lower edge into the flat cream so no seam shows
-    mask = Image.linear_gradient("L").resize((col, fade)).transpose(Image.FLIP_TOP_BOTTOM)
+    mask = Image.linear_gradient("L").resize((col, fade)).transpose(Image.Transpose.FLIP_TOP_BOTTOM)
     alpha = Image.new("L", rubata.size, 255)
     alpha.paste(mask, (0, rubata.height - fade))
     rubata.putalpha(alpha)
@@ -352,7 +355,7 @@ def pack_with_sticks() -> Image.Image:
     sticks = classico_sticks().rotate(90, expand=True)
     pair = Image.new("RGB", (sticks.width * 2, sticks.height))
     pair.paste(sticks, (0, 0))
-    pair.paste(sticks.transpose(Image.FLIP_TOP_BOTTOM), (sticks.width, 0))
+    pair.paste(sticks.transpose(Image.Transpose.FLIP_TOP_BOTTOM), (sticks.width, 0))
     # kit photo is low-key; match campaign daylight
     pair = ImageEnhance.Brightness(pair).enhance(1.15)
     fill = cover(pair, r - l + 60, b - t + 60).convert("RGBA")
@@ -378,7 +381,7 @@ def social_finestra_1x1(_plates: list[Image.Image], _variant: str) -> Image.Imag
     cw = (r - l) + 160  # whole window plus a margin of carton
     ch = round(cw * h / left)
     crop = pack.crop((cx - cw // 2, cy - ch // 2, cx + cw // 2, cy + ch // 2))
-    c.alpha_composite(crop.resize((left, h), Image.LANCZOS), (0, 0))
+    c.alpha_composite(crop.resize((left, h), Image.Resampling.LANCZOS), (0, 0))
 
     d = ImageDraw.Draw(c)
     x = left + 64  # logo clear space >= F (62 px) from the image edge
@@ -401,7 +404,7 @@ def social_finestra_1x1(_plates: list[Image.Image], _variant: str) -> Image.Imag
 def packshot(canvas: Image.Image, height: int, xy: tuple[int, int], anchor: str = "mb") -> None:
     """Real Il Classico 3D mockup with a soft contact shadow (on the product, never the logo)."""
     im = Image.open(PACKSHOT).convert("RGBA")
-    im = im.resize((round(im.width * height / im.height), height), Image.LANCZOS)
+    im = im.resize((round(im.width * height / im.height), height), Image.Resampling.LANCZOS)
     x = xy[0] - {"l": 0, "m": im.width // 2, "r": im.width}[anchor[0]]
     y = xy[1] - {"t": 0, "m": im.height // 2, "b": im.height}[anchor[1]]
     sh = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
@@ -434,7 +437,7 @@ def social_story_9x16(plates: list[Image.Image], _variant: str) -> Image.Image:
     w, h = SPECS["social-story-9x16"].size
     seam = 1100
     c = Image.new("RGBA", (w, h), CREAM)
-    # focus 0.6: the final plate (story-full2) has a branded glass at the very top; this crop drops it
+    # focus 0.6: the story-full2 plate has a branded glass at the very top; this crop drops it
     c.alpha_composite(cover(plates[0], w, seam, (0.5, 0.6)).convert("RGBA"), (0, 0))
 
     d = ImageDraw.Draw(c)
