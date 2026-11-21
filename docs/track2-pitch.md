@@ -66,7 +66,7 @@ Speakers are a proposal; swap them as you prefer.
 
 - Two lines before pressing play: "The voiceover is in Italian, the language of the people we are selling to. 30 seconds: a Christmas story, from 1968 to today."
 - Play the spot full screen. Do not talk over it.
-- After it ends, one line: "Every image, clip and voice is AI-generated. The pack and the logo are the real ones."
+- After it ends, one line: "Every shot, voice and sound in the spot is AI-generated. The pack and the logo are the real ones."
 
 ### 5. Out in the world (0:10)
 
