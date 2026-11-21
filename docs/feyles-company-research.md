@@ -28,22 +28,22 @@ Use this page for context, and check any claim against those materials before it
 
 ## The company
 
-| Item                | Detail                                                                                                    |
-| ------------------- | --------------------------------------------------------------------------------------------------------- |
-| Legal name          | Feyles Srl                                                                                                |
-| Founded             | 1968, when the Feyles family started making rubatà                                                       |
-| Type                | Family business. No founder or family member names are public                                             |
-| Bakery history      | Santena for many years, then a new building in Cambiano from early 2025                                   |
-| Bakery and shop     | Via Triberti 4, 10020 Cambiano (TO)                                                                       |
-| City shop           | Piazza Castello 49, 10123 Torino, under the arcades near Palazzo Reale. Opened 2 December 2023            |
-| Registered office   | Corso Vittorio Emanuele II 71, 10128 Torino                                                               |
-| Reputation          | 4.8 out of 5 from about 1,050 Google reviews for the Cambiano shop                                        |
-| B2B                 | Supplies restaurants, delis, shops, bars and hotels across Italy                                          |
-| Export              | None. The online shop ships to Italy only                                                                 |
-| Website             | [grissinificiofeyles.it](https://grissinificiofeyles.it/), in Italian, English, French and Spanish       |
-| Instagram           | [@grissinificiofeyles1968](https://www.instagram.com/grissinificiofeyles1968/)                            |
-| TikTok              | [@grissinificiofeyles](https://www.tiktok.com/@grissinificiofeyles)                                       |
-| Facebook            | [Grissinificio Feyles](https://www.facebook.com/p/Grissinificio-Feyles-100083511288181/)                  |
+| Item              | Detail                                                                                             |
+| ----------------- | -------------------------------------------------------------------------------------------------- |
+| Legal name        | Feyles Srl                                                                                         |
+| Founded           | 1968, when the Feyles family started making rubatà                                                 |
+| Type              | Family business. No founder or family member names are public                                      |
+| Bakery history    | Santena for many years, then a new building in Cambiano from early 2025                            |
+| Bakery and shop   | Via Triberti 4, 10020 Cambiano (TO)                                                                |
+| City shop         | Piazza Castello 49, 10123 Torino, under the arcades near Palazzo Reale. Opened 2 December 2023     |
+| Registered office | Corso Vittorio Emanuele II 71, 10128 Torino                                                        |
+| Reputation        | 4.8 out of 5 from about 1,050 Google reviews for the Cambiano shop                                 |
+| B2B               | Supplies restaurants, delis, shops, bars and hotels across Italy                                   |
+| Export            | None. The online shop ships to Italy only                                                          |
+| Website           | [grissinificiofeyles.it](https://grissinificiofeyles.it/), in Italian, English, French and Spanish |
+| Instagram         | [@grissinificiofeyles1968](https://www.instagram.com/grissinificiofeyles1968/)                     |
+| TikTok            | [@grissinificiofeyles](https://www.tiktok.com/@grissinificiofeyles)                                |
+| Facebook          | [Grissinificio Feyles](https://www.facebook.com/p/Grissinificio-Feyles-100083511288181/)           |
 
 Opening hours, as given on the official site:
 
@@ -80,20 +80,20 @@ Opening hours, as given on the official site:
 Prices are from the online shop on 21 November 2026, for a 200 g box unless stated.
 Rubatà also come in 750 g, 1.5 kg and 3 kg boxes.
 
-| Product                                 | Key ingredient                    | Price  | Notes                                   |
-| --------------------------------------- | --------------------------------- | ------ | --------------------------------------- |
-| Rubatà Classici ("Il Classico")         | Lard                              | €2.90  | 750 g €6.90. The only one with lard     |
-| Rubatà Olio EVO ("L'Extravergine")      | Extra virgin olive oil            | €3.20  | 750 g €7.90                             |
-| Rubatà Polentini ("Il Polentino")       | Maize flour, sunflower oil        | €3.20  | 750 g €7.90                             |
-| Rubatà Light ("Il Light")               | No lard and no oil                | €2.90  | 750 g €6.90                             |
-| Rubatà Integrali ("L'Integrale")        | Wholemeal flour, olive oil        | €3.20  | 750 g €7.90                             |
-| Grissini Tre Semi ("I Tre Semi")        | Sesame, flax and chia seeds       | €3.40  | 750 g €9.50, 1.5 kg €17.50, 3 kg €29.00 |
-| Rubatà Speziati ("Lo Speziato")         | Turmeric and rosemary             | €3.40  | 750 g €9.50. Seasonal                   |
-| Grissini Nocciole Piemonte IGP          | Piedmont PGI hazelnuts            | €3.40  | 750 g €9.50. Contains tree nuts         |
-| Brichet (short grissini), 4 flavours    | Garlic oil chilli, onion, cacio e pepe, Mediterraneo | €3.90 | Cacio e pepe contains milk |
-| Cioccorubatà, 150 g, 3 flavours         | Dark, milk or gianduia chocolate  | €6.50  | All contain soy                         |
-| Piedmontese biscuits, 280 g, 4 kinds    | Granin Gentile, Melighiotti, Nettarini, Vanillosi | €6.00 | 1 kg €14.00. Butter and eggs |
-| Tasting bundle, 12 × 200 g              | One box of each grissino and Brichet | €41.20 | Free shipping                       |
+| Product                              | Key ingredient                                       | Price  | Notes                                   |
+| ------------------------------------ | ---------------------------------------------------- | ------ | --------------------------------------- |
+| Rubatà Classici ("Il Classico")      | Lard                                                 | €2.90  | 750 g €6.90. The only one with lard     |
+| Rubatà Olio EVO ("L'Extravergine")   | Extra virgin olive oil                               | €3.20  | 750 g €7.90                             |
+| Rubatà Polentini ("Il Polentino")    | Maize flour, sunflower oil                           | €3.20  | 750 g €7.90                             |
+| Rubatà Light ("Il Light")            | No lard and no oil                                   | €2.90  | 750 g €6.90                             |
+| Rubatà Integrali ("L'Integrale")     | Wholemeal flour, olive oil                           | €3.20  | 750 g €7.90                             |
+| Grissini Tre Semi ("I Tre Semi")     | Sesame, flax and chia seeds                          | €3.40  | 750 g €9.50, 1.5 kg €17.50, 3 kg €29.00 |
+| Rubatà Speziati ("Lo Speziato")      | Turmeric and rosemary                                | €3.40  | 750 g €9.50. Seasonal                   |
+| Grissini Nocciole Piemonte IGP       | Piedmont PGI hazelnuts                               | €3.40  | 750 g €9.50. Contains tree nuts         |
+| Brichet (short grissini), 4 flavours | Garlic oil chilli, onion, cacio e pepe, Mediterraneo | €3.90  | Cacio e pepe contains milk              |
+| Cioccorubatà, 150 g, 3 flavours      | Dark, milk or gianduia chocolate                     | €6.50  | All contain soy                         |
+| Piedmontese biscuits, 280 g, 4 kinds | Granin Gentile, Melighiotti, Nettarini, Vanillosi    | €6.00  | 1 kg €14.00. Butter and eggs            |
+| Tasting bundle, 12 × 200 g           | One box of each grissino and Brichet                 | €41.20 | Free shipping                           |
 
 Free of animal ingredients, per the FAQ:
 Olio EVO, Integrali, Light, Polentini, Speziati, Tre Semi, three of the Brichet (not cacio e pepe), Cioccorubatà fondente and gianduia.
@@ -141,17 +141,17 @@ Their own photos include product boxes, a linen bag on a set table, and archive 
 
 The site's [press page](https://grissinificiofeyles.it/dicono-di-noi) lists:
 
-| Date        | Outlet                             | What it says                                                                     |
-| ----------- | ---------------------------------- | -------------------------------------------------------------------------------- |
-| Sep 2026    | Terra Madre Salone del Gusto 2026  | Feyles exhibited in the bread and bakery section, Piazzetta Reale                |
-| 6 Aug 2026  | ilovetorino                        | Among the 5 best places for Turin grissini: "un nome simbolo della città"       |
-| 31 Oct 2025 | Corriere della Sera, Torino        | Best grissini in Turin: "Un nome storico per chi ama il grissino 'rubatà'"      |
-| 16 May 2025 | La Stampa TorinoSette              | San Giors restaurant breads its Fassone cutlet with Feyles rubatà               |
-| 20 Dec 2024 | La Stampa                          | "Regali made in Turin", Christmas gift ideas                                     |
-| 25 May 2024 | La Voce di Torino                  | "lo storico grissinificio Feyles" in Piazza Castello                             |
-| 16 Apr 2024 | La Cucina Italiana                 | Best grissini in Turin: "un negozio monomarca dedicato al grissino"             |
-| 18 Dec 2023 | GuidaTorino                        | New openings: the Piazza Castello shop                                           |
-| 2 Dec 2023  | TorinoToday                        | After 55 years, the first shop in central Turin                                  |
+| Date        | Outlet                            | What it says                                                               |
+| ----------- | --------------------------------- | -------------------------------------------------------------------------- |
+| Sep 2026    | Terra Madre Salone del Gusto 2026 | Feyles exhibited in the bread and bakery section, Piazzetta Reale          |
+| 6 Aug 2026  | ilovetorino                       | Among the 5 best places for Turin grissini: "un nome simbolo della città"  |
+| 31 Oct 2025 | Corriere della Sera, Torino       | Best grissini in Turin: "Un nome storico per chi ama il grissino 'rubatà'" |
+| 16 May 2025 | La Stampa TorinoSette             | San Giors restaurant breads its Fassone cutlet with Feyles rubatà          |
+| 20 Dec 2024 | La Stampa                         | "Regali made in Turin", Christmas gift ideas                               |
+| 25 May 2024 | La Voce di Torino                 | "lo storico grissinificio Feyles" in Piazza Castello                       |
+| 16 Apr 2024 | La Cucina Italiana                | Best grissini in Turin: "un negozio monomarca dedicato al grissino"        |
+| 18 Dec 2023 | GuidaTorino                       | New openings: the Piazza Castello shop                                     |
+| 2 Dec 2023  | TorinoToday                       | After 55 years, the first shop in central Turin                            |
 
 No awards or certifications are claimed.
 
