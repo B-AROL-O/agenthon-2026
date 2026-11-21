@@ -5,7 +5,7 @@ This file provides guidance to AI coding agents working in this repository.
 ## What this repository is
 
 Team workspace of the B-AROL-O team for the GDG Torino "Build with AI" Agenthon (21 November 2026, Track 2: GenAI for marketing, client Feyles / Rubatà breadsticks).
-It currently holds **documentation only** — no application code, build system or tests.
+It currently holds **documentation only** — no application code, build tool or tests.
 The `.devcontainer/` image (Node, Python, uv, Claude Code, Docker-in-Docker, gh) is there for whatever gets built during the event.
 
 Start from [README.md](README.md) for event details and team, then:
@@ -26,7 +26,7 @@ To preview locally: `npx docsify-cli serve docs`.
 CI runs [Super-Linter](.github/workflows/linter.yml) on every push and PR, with Prettier as the formatter (Biome format, JSON and Black validators are disabled).
 Checks that have actually failed on this repo's Markdown: Prettier formatting, markdownlint, textlint and codespell.
 
-- markdownlint rules: [.github/linters/.markdown-lint.yml](.github/linters/.markdown-lint.yml) (root `.markdownlint.yaml` extends it for the VS Code extension). Line length limit is 400; inline HTML allowed.
+- markdownlint rules: [.github/linters/.markdown-lint.yml](.github/linters/.markdown-lint.yml) (root `.markdownlint.yaml` extends it for the Visual Studio Code extension). Line length limit is 400; inline HTML allowed.
 - codespell: Italian words that trigger false positives go in `ignore-words-list` in [.github/linters/.codespellrc](.github/linters/.codespellrc).
 - Before committing, run at least `npx prettier --check .` (or `--write`) and `npx markdownlint-cli2 "**/*.md"`.
 
