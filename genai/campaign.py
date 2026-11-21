@@ -1,3 +1,5 @@
+# Layout functions place many elements by coordinates; splitting them would hurt readability.
+# pylint: disable=too-many-locals,too-many-arguments,too-many-positional-arguments
 """WP2 full campaign build: every static deliverable, in every format, into out/drive/.
 
 Builds on compose.py (same helpers, brand rules and plates). One command rebuilds the whole
@@ -99,12 +101,12 @@ def extend_top(img: Image.Image, extra: int) -> Image.Image:
 def hero_photo(w: int) -> tuple[Image.Image, int]:
     """Hero plate at width w, plus the row where the leaked dark backdrop starts."""
     p = plate("hero")
-    p = p.resize((w, round(p.height * w / p.width)), Image.LANCZOS)
+    p = p.resize((w, round(p.height * w / p.width)), Image.Resampling.LANCZOS)
     return p, C.first_dark_row(p.convert("RGBA"), p.height * 2 // 3)
 
 
 # --- Social: one concept, three formats ------------------------------------------------
-def scene_post(  # pylint: disable=too-many-arguments,too-many-positional-arguments,too-many-locals
+def scene_post(
     src: Image.Image,
     size: tuple[int, int],
     photo_h: int,
@@ -263,9 +265,7 @@ def build_social() -> None:
 
 
 # --- Carousel: the spot's story in six slides ------------------------------------------
-def slide(  # pylint: disable=too-many-arguments,too-many-positional-arguments
-    top: Image.Image, n: int, lines: list[str], cta: str | None = None
-) -> Image.Image:
+def slide(top: Image.Image, n: int, lines: list[str], cta: str | None = None) -> Image.Image:
     """4:5 carousel slide: picture 0-1000, cream band with the line, counter and spiga mark."""
     w, h, ph = 1080, 1350, 1000
     c = Image.new("RGBA", (w, h), CREAM)
@@ -289,7 +289,7 @@ def build_carousel() -> None:
     C.tile(s1, C.PATTERN / "feyles_pattern-spiga_bianco-su-azzurro.png", (0, 0, w, ph), 520, 0.18)
     ear = C.key_out(plate("spiga"))
     ear = ear.crop(ear.getchannel("A").getbbox())
-    ear = ear.resize((round(ear.width * 900 / ear.height), 900), Image.LANCZOS)
+    ear = ear.resize((round(ear.width * 900 / ear.height), 900), Image.Resampling.LANCZOS)
     s1.alpha_composite(ear, (w // 2 - ear.width // 2, 60))
     forno = ImageEnhance.Brightness(Image.open(FORNO).convert("RGB")).enhance(1.12)
     p, dark = hero_photo(w)
@@ -323,7 +323,7 @@ def build_carousel() -> None:
 
 
 # --- Web: banner, display set, homepage hero -------------------------------------------
-def display(size: tuple[int, int]) -> Image.Image:  # pylint: disable=too-many-locals
+def display(size: tuple[int, int]) -> Image.Image:
     """IAB display ads with the gift message. Where the full logo can't keep its clear space
     (90-100 px tall formats), the brand's own rule allows the spiga mark alone."""
     web = plate("web")
@@ -436,7 +436,7 @@ def billboard() -> Image.Image:
     C.tile(c, C.PATTERN / "feyles_pattern-spiga_bianco-su-azzurro.png", (0, 0, col, h), 600, 0.18)
     ear = C.key_out(plate("spiga"))
     ear = ear.crop(ear.getchannel("A").getbbox())
-    ear = ear.resize((round(ear.width * 1700 / ear.height), 1700), Image.LANCZOS)
+    ear = ear.resize((round(ear.width * 1700 / ear.height), 1700), Image.Resampling.LANCZOS)
     c.alpha_composite(ear, (420 - ear.width // 2, 150))
     rub = plate("rubata")
     box = C.key_out(rub, 18, 40).getchannel("A").getbbox()
@@ -552,7 +552,8 @@ def solve(a: list[list[float]], b: list[float]) -> list[float]:
     n = len(b)
     m = [row[:] + [b[i]] for i, row in enumerate(a)]
     for col in range(n):
-        piv = max(range(col, n), key=lambda r: abs(m[r][col]))
+        column = [abs(row[col]) for row in m]
+        piv = max(range(col, n), key=column.__getitem__)
         m[col], m[piv] = m[piv], m[col]
         for r in range(n):
             if r != col:
@@ -599,7 +600,9 @@ def place(scene_name: str, art: Image.Image) -> Image.Image:
         rows.append([0, 0, 0, x, y, 1, -v * x, -v * y])
         rhs.append(v)
     coeffs = solve(rows, rhs)
-    warped = art.convert("RGB").transform(scene.size, Image.PERSPECTIVE, coeffs, Image.BICUBIC)
+    warped = art.convert("RGB").transform(
+        scene.size, Image.Transform.PERSPECTIVE, coeffs, Image.Resampling.BICUBIC
+    )
     out = scene.copy()
     out.paste(warped, (0, 0), mask)
     return out
@@ -639,7 +642,7 @@ def stripes(w: int, h: int) -> Image.Image:
         im = Image.open(MOCKUPS / f"feyles_mockup_astuccio-200g_Rubata-{name}.png").convert("RGBA")
         pw = round(sw * 0.8)
         ph = round(im.height * pw / im.width)
-        im = im.resize((pw, ph), Image.LANCZOS)
+        im = im.resize((pw, ph), Image.Resampling.LANCZOS)
         cx = (x0 + x1) // 2
         base = round(h * 0.7) if h > w * 1.05 else h - round(h * 0.08)
         sh = Image.new("RGBA", c.size, (0, 0, 0, 0))
@@ -692,6 +695,12 @@ GROUPS = {
     "mockups": build_mockups,
 }
 
+
+def main() -> None:
+    """Build the groups named on the command line, or all of them."""
+    for group in sys.argv[1:] or list(GROUPS):
+        GROUPS[group]()
+
+
 if __name__ == "__main__":
-    for name in sys.argv[1:] or list(GROUPS):
-        GROUPS[name]()
+    main()
