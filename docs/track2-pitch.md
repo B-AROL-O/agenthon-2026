@@ -59,7 +59,7 @@ Speakers are a proposal; swap them as you prefer.
 ### 3. The idea (0:40)
 
 - A Rubatà does both meanings of «dividere» in one gesture: snap it in half, and you are already handing the other half to someone.
-- So we do not explain sharing: we show the snap. One becomes two.
+- So we do not explain sharing: one breadstick becomes two. The stills show the snap; the Christmas spot tells the sharing, from 1968 to today.
 - It uses all three things the brief asked for: the shape, the crunch, the act of sharing.
 
 ### 4. Demo: the spot (0:40)
@@ -81,7 +81,7 @@ Speakers are a proposal; swap them as you prefer.
 
 ### 7. How we made it (0:50)
 
-- Pipeline: official pack photos as references → AI keyframes and text-free plates → Veo clips with real snap sound → ElevenLabs Italian voiceover → logo, claim and CTA added in post. Name the exact tools from the [tools list](track2-tools.md).
+- Pipeline: official pack photos as references → AI keyframes and text-free plates → Veo clips with native sound → ElevenLabs Italian voiceover → logo, claim and CTA added in post. Name the exact tools from the [tools list](track2-tools.md).
 - The rules we gave the AI: knobbly Rubatà only, never hands shaping dough, never generated text or logo, only facts from the client kit.
 - One honest example of a problem and how we solved it (_to fill in after production_, for example a warped pack replaced by the real photo).
 
