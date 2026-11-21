@@ -7,7 +7,7 @@ line-length = 100
 ignore = ["E203"]
 
 [lint.isort]
-# genai/compose.py is a local module: sort it after third-party imports, as Pylint expects
-known-first-party = ["compose"]
+# genai/campaign.py and genai/compose.py are local modules: sort them after third-party imports, as Pylint expects
+known-first-party = ["campaign", "compose"]
 
 # EOF

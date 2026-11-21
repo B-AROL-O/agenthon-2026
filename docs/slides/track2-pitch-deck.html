@@ -947,10 +947,10 @@
 
       const show = (i) => {
         current = Math.max(0, Math.min(slides.length - 1, i));
-        slides.forEach((el, j) =>
-          el.classList.toggle("current", j === current),
-        );
-        history.replaceState(null, "", "#" + (current + 1));
+        slides.forEach((el, j) => {
+          el.classList.toggle("current", j === current);
+        });
+        history.replaceState(null, "", `#${current + 1}`);
         if (present()) {
           fit();
         } else {

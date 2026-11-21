@@ -10,14 +10,14 @@ The team freezes the folder at **16:45** (see the [timeline and WBS](track2-wbs.
 
 ## At a glance
 
-| #   | Deliverable                 | What we submit                                                                            | Drive folder                                                                                   | Details in this repo                                                                            | Owner     | Status   |
-| --- | --------------------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | --------- | -------- |
-| 1   | Commercial, 20 to 30 s      | The spot, about 26.5 s, in 16:9 and 9:16                                                  | [`01-spot/`](https://drive.google.com/drive/folders/13EHiNV1HQBJPxkDNWpmyLRpG7rdJucXo)         | [Concept lock, beat sheet](track2-concept-lock.md)                                              | Luca      | To check |
-| 2   | Social media content set    | Five post concepts in 3 formats, a carousel and captions; Christmas and Cioccorubatà sets | [`02-social/`](https://drive.google.com/drive/folders/1amFIgQr7ArG1DLYrSLLaNdptWTM_iiFC)       | [Static visuals catalogue](track2-wp2-deliverables.md), [copy deck](track2-social-copy-deck.md) | Alessio   | In Drive |
-| 3   | Website and traditional ads | Web banners, home page hero, display ads and print files, each with Christmas versions    | [`03-web-print/`](https://drive.google.com/drive/folders/18gIPEFHZyNM86PuDFWHWoinOW7QiNQpd)    | [Static visuals catalogue](track2-wp2-deliverables.md)                                          | Alessio   | To check |
-| 4   | Advertising image           | Hero ad in 3 formats, range ad; Christmas ad, Cioccorubatà ad, full-range ad              | [`04-ad-image/`](https://drive.google.com/drive/folders/1Ot28S0gflXRGzg4BuRky1iISRpEJB-RL)     | [Static visuals catalogue](track2-wp2-deliverables.md)                                          | Alessio   | To check |
-| 5   | Project presentation sheet  | Idea, concept, tools and the role of AI, as a document                                    | [`05-project-sheet`](https://drive.google.com/drive/folders/1Vka12bMpa0K35WniqEP6akLKSiTJG9YL) | [Project sheet](track2-project-sheet.md)                                                        | Gianpaolo | In Drive |
-| 6   | Tool details                | Every platform and software we used, and what for, at each production stage               | [`06-tools-list`](https://drive.google.com/drive/folders/1jHfqP7arUS2hm7aHMIjWepbRe3Z3Gw0f)    | [Tools list](track2-tools.md)                                                                   | Gianpaolo | In Drive |
+| #   | Deliverable                | What we submit                                                                            | Drive folder                                                                                   | Details in this repository                                                                      | Owner     | Status   |
+| --- | -------------------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | --------- | -------- |
+| 1   | Commercial, 20 to 30 s     | The spot, about 26.5 s, in 16:9 and 9:16                                                  | [`01-spot/`](https://drive.google.com/drive/folders/13EHiNV1HQBJPxkDNWpmyLRpG7rdJucXo)         | [Concept lock, beat sheet](track2-concept-lock.md)                                              | Luca      | To check |
+| 2   | Social media content set   | Five post concepts in 3 formats, a carousel and captions; Christmas and Cioccorubatà sets | [`02-social/`](https://drive.google.com/drive/folders/1amFIgQr7ArG1DLYrSLLaNdptWTM_iiFC)       | [Static visuals catalogue](track2-wp2-deliverables.md), [copy deck](track2-social-copy-deck.md) | Alessio   | In Drive |
+| 3   | Web and traditional ads    | Web banners, home page hero, display ads and print files, each with Christmas versions    | [`03-web-print/`](https://drive.google.com/drive/folders/18gIPEFHZyNM86PuDFWHWoinOW7QiNQpd)    | [Static visuals catalogue](track2-wp2-deliverables.md)                                          | Alessio   | To check |
+| 4   | Advertising image          | Hero ad in 3 formats, range ad; Christmas ad, Cioccorubatà ad, full-range ad              | [`04-ad-image/`](https://drive.google.com/drive/folders/1Ot28S0gflXRGzg4BuRky1iISRpEJB-RL)     | [Static visuals catalogue](track2-wp2-deliverables.md)                                          | Alessio   | To check |
+| 5   | Project presentation sheet | Idea, concept, tools and the role of AI, as a document                                    | [`05-project-sheet`](https://drive.google.com/drive/folders/1Vka12bMpa0K35WniqEP6akLKSiTJG9YL) | [Project sheet](track2-project-sheet.md)                                                        | Gianpaolo | In Drive |
+| 6   | Tool details               | Every platform and software we used, and what for, at each production stage               | [`06-tools-list`](https://drive.google.com/drive/folders/1jHfqP7arUS2hm7aHMIjWepbRe3Z3Gw0f)    | [Tools list](track2-tools.md)                                                                   | Gianpaolo | In Drive |
 
 Status values: **To check** (not yet verified in Drive), **In Drive** (files uploaded), **Final** (checked at the final review, do not touch).
 Update the row as soon as something changes.
@@ -44,7 +44,7 @@ Each file has its channel and caption in the copy deck.
 
 **Where:** [`02-social/`](https://drive.google.com/drive/folders/1amFIgQr7ArG1DLYrSLLaNdptWTM_iiFC), one subfolder per concept; file list in the [static visuals catalogue](track2-wp2-deliverables.md), captions in the [social copy deck](track2-social-copy-deck.md).
 
-### 3. Website and traditional advertising materials
+### 3. Web and traditional advertising materials
 
 **The brief asks for** visuals consistent with the campaign's creative concept.
 
@@ -94,7 +94,7 @@ These support the deliverables but do not go in the submission folder.
 
 At the final review (16:15 to 16:30), for each row of the table above:
 
-- Open the Drive folder and check that the final files are there, with the names listed in the repo docs.
+- Open the Drive folder and check that the final files are there, with the names listed in the repository docs.
 - Check product fidelity, brand and tone of voice, and spelling.
 - Set the status to **Final**.
 
