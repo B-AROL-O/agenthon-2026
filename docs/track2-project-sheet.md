@@ -2,9 +2,8 @@
 
 <!-- (2026-11-21) -->
 
-Draft of **deliverable 5** for the [Track 2 challenge brief](track2-challenge.md): idea, concept, tools and the role of AI in our work.
-It is tracked in [WP3](https://github.com/B-AROL-O/agenthon-2026/issues/10) and built on the [concept lock](track2-concept-lock.md).
-Export the final version to `05-project-sheet` in the submission Drive folder before 16:45.
+Deliverable 5 of our submission for AGENTHON 2026, Track 2 (GenAI for marketing): the creative idea, the concept, the tools we used and the role of AI in our work.
+The other deliverables are in the folders `01-spot` to `06-tools-list` of this submission.
 
 ## Project
 
@@ -13,7 +12,7 @@ Export the final version to `05-project-sheet` in the submission Drive folder be
 | Name   | **Si divide. Si condivide.**                                                           |
 | Track  | 2, GenAI for marketing (sponsor: Demetra)                                              |
 | Client | Feyles – Grissinificio, Rubatà breadsticks                                             |
-| Hero   | `Il Classico` 200 g, the sky-blue carton with the wheat-ear window                     |
+| Hero   | Il Classico 200 g, the sky-blue carton with the wheat-ear window                       |
 | Target | 25 to 40 year-olds: aperitivo at home with friends, and a gift to bring to their place |
 | Team   | Team Macario: Gianpaolo Macario, Alessio Chessa, Luca Frigato                          |
 
@@ -29,7 +28,7 @@ It only has to show the snap: one breadstick becomes two, and the aperitivo begi
 
 ## The concept
 
-The 26-second spot follows one Rubatà from the snap back to its origins and forward to the table:
+The spot, about 26 seconds long, follows one Rubatà from the snap back to its origins and forward to the table:
 
 1. **The snap.** Two people's hands break one knobbly Rubatà on a flat sky-blue background. Only the sound of the crunch, no music.
 2. **Where it comes from.** A golden ear of wheat, then Rubatà leaving the oven: each piece different from the next.
@@ -53,18 +52,18 @@ The same gesture carries the whole campaign: one recognizable idea (the snap), o
 
 ## Campaign system
 
-| Deliverable                 | What we made                                                                                        | Ratio          |
-| --------------------------- | --------------------------------------------------------------------------------------------------- | -------------- |
-| 1. Advertising spot         | 26.5 s spot in 8 beats, with AI voiceover, music and native snap sounds                             | 16:9 and 9:16  |
-| 2. Social media content set | Story with the friend-tag prompt _«A chi va l'altra metà?»_, a wheat-ear window macro, a Turin post | 9:16, 1:1, 4:5 |
-| 3. Web and print visuals    | Gift banner _«Portate qualcosa da dividere.»_ and a two-block poster: wheat ear and snapped Rubatà  | 16:9, 2:3      |
-| 4. Advertising image        | Snapped Rubatà between two hands: _«Spezzatelo. È fatto apposta.»_ + _«Scoprite gli otto gusti»_    | 4:5            |
-| 5. Project sheet            | This document                                                                                       |                |
-| 6. Tools list               | [Track 2 tools list](track2-tools.md)                                                               |                |
+| Deliverable                 | What we made                                                                                                                                                                                                                                        | Formats         | Folder             |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------ |
+| 1. Commercial               | A spot of about 26 seconds in 8 beats, with AI voiceover, music and native snap sounds                                                                                                                                                              | 16:9, 9:16      | `01-spot`          |
+| 2. Social media content set | Five post concepts: the aperitivo table with the friend-tag prompt _«A chi va l'altra metà?»_, the pack window and its ingredients, Turin's arcades, the gift, the full range. Plus a six-slide carousel that retells the spot                      | 9:16, 4:5, 1:1  | `02-social`        |
+| 3. Web and print visuals    | Web banners, a home page hero for desktop and mobile, four display ad sizes; a poster with the claim split in two, a 6×3 m billboard, a bus-shelter poster, an A4 magazine page and a gift tag, each as a print-ready PDF; three in-context mockups | Several         | `03-web-print`     |
+| 4. Advertising image        | A snapped Rubatà between two hands: _«Spezzatelo. È fatto apposta.»_ and _«Scoprite gli otto gusti»_; plus a range ad                                                                                                                               | 4:5, 1:1, 9:16  | `04-ad-image`      |
+| 5. Project sheet            | This document                                                                                                                                                                                                                                       | PDF, Google Doc | `05-project-sheet` |
+| 6. Tools list               | Every platform and model we used, and what for                                                                                                                                                                                                      | PDF, Google Doc | `06-tools-list`    |
 
-**Look:** bright natural daylight on flat colour blocks taken from the pack: sky blue `#8DC6E8`, cream `#F9F2E9`, yellow `#F9C86A`.
+**Look:** bright natural daylight on flat colour blocks taken from the pack: sky blue #8DC6E8, cream #F9F2E9, yellow #F9C86A.
 Layouts split in two halves, mirroring the act of dividing.
-`Playfair Display` for titles and `Lato` for text, standing in for the brand's commercial typeface.
+Playfair Display for titles and Lato for text, standing in for the brand's commercial typeface.
 
 **Voice:** the brand's own register: plural «voi», short sentences, concrete nouns, no hype words.
 
@@ -92,7 +91,7 @@ People made every decision about the idea, the brand and the final cut.
 
 ## Tools
 
-The full list, with what each tool was used for, is in the [Track 2 tools list](track2-tools.md) (deliverable 6).
+The full list, with the exact model or version of each tool and what it was used for, is in the tools list (deliverable 6, folder `06-tools-list`).
 In short: Nano Banana 2 for keyframes and plates, Google Veo 3.1 for video, ElevenLabs for voiceover, music and sound effects, HeyGen HyperFrames, FFmpeg and Python with Pillow for editing and compositing, Claude for research, planning and the compositing code, and GitHub and Google Drive for collaboration.
 
 ## Beyond the prototype
