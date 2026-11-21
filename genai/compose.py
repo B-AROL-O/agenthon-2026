@@ -95,6 +95,42 @@ def paste_width(canvas: Image.Image, path: Path, width: int, xy: tuple[int, int]
     return im.size
 
 
+def lockup(  # pylint: disable=too-many-arguments,too-many-positional-arguments
+    canvas: Image.Image,
+    colour: str,
+    logo_w: int,
+    xy: tuple[int, int],
+    anchor: str = "mm",
+    ink: str = BLACK,
+) -> tuple[int, int, int, int]:
+    """Campaign sign-off, modelled on the piazza Castello shop sign: logo | stacked claim.
+
+    Logo and claim are separated by a thin divider with clear space >= F height on both
+    sides (F is ~25% of the logo width). Returns the bounding box (l, t, r, b).
+    """
+    logo = Image.open(logo_path(colour)).convert("RGBA")
+    logo = logo.resize((logo_w, round(logo.height * logo_w / logo.width)), Image.LANCZOS)
+    f_h = round(logo_w * 0.25)
+    claim = font("title-italic", round(logo_w * 0.135))
+    lines = ["Si divide.", "Si condivide."]
+    d = ImageDraw.Draw(canvas)
+    text_w = max(round(d.textlength(t, font=claim)) for t in lines)
+    total_w = logo.width + 2 * f_h + 2 + text_w
+    h = logo.height
+    x = xy[0] - {"l": 0, "m": total_w // 2, "r": total_w}[anchor[0]]
+    y = xy[1] - {"t": 0, "m": h // 2, "b": h}[anchor[1]]
+    canvas.alpha_composite(logo, (x, y))
+    div_x = x + logo.width + f_h
+    rule = GOLD if colour == "oro" else ink
+    d.line((div_x, y, div_x, y + h), fill=rule, width=2)
+    tx = div_x + 2 + f_h
+    step = round(claim.size * 1.12)
+    top = y + (h - 2 * step) // 2
+    for i, t in enumerate(lines):
+        d.text((tx, top + i * step), t, font=claim, fill=ink, anchor="la")
+    return (x, y, x + total_w, y + h)
+
+
 def text_block(  # pylint: disable=too-many-arguments,too-many-positional-arguments
     draw: ImageDraw.ImageDraw,
     lines: list[str],
@@ -248,7 +284,7 @@ def hero_ad_4x5(plates: list[Image.Image], variant: str) -> Image.Image:
         d.rectangle((0, top, w, h), fill=CREAM)
         # clear space >= F height (F is ~25% of logo width): gap pill->logo 62 px, F 55 px
         pill(c, "Scoprite gli otto gusti", (w // 2, top + 83), cta, SKY, BLACK)
-        paste_width(c, logo_path("oro"), 220, (w // 2, top + 219))
+        lockup(c, "oro", 220, (w // 2, top + 219))
     else:
         if dark < h:
             extend_down(c, dark)
@@ -388,7 +424,7 @@ def web_banner_16x9(plates: list[Image.Image], _variant: str) -> Image.Image:
     text_block(d, ["Portate qualcosa", "da dividere."], font("title-bold", 70), (cx, 100), BLACK)
     packshot(c, 470, (cx, 770))
     pill(c, "Componete la vostra box regalo", (cx, 860), font("body-bold", 32), SKY, BLACK)
-    paste_width(c, logo_path("oro"), 210, (cx, 985))
+    lockup(c, "oro", 210, (cx, 985))
     return c
 
 
@@ -438,7 +474,7 @@ def social_torino_4x5(plates: list[Image.Image], _variant: str) -> Image.Image:
     f = font("body-bold", 30)
     l, _, r, _ = d.textbbox((0, 0), cta, font=f)
     pill(c, cta, (64 + (r - l) // 2 + 44, y + 60), f, SKY, BLACK, (44, 22))
-    paste_width(c, logo_path("oro"), 180, (64, h - 69), anchor="lb")  # gap to pill >= F (45 px)
+    lockup(c, "oro", 180, (64, h - 69), anchor="lb")  # gap to pill >= F (45 px)
     packshot(c, 400, (w - 150, h - 40))
     return c
 
