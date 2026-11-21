@@ -13,21 +13,25 @@ How to keep it current:
 
 ## Generative AI
 
-| Tool                                 | Used for                                                                                                        | Deliverables | Owner         | Status     |
-| ------------------------------------ | --------------------------------------------------------------------------------------------------------------- | ------------ | ------------- | ---------- |
-| Google Veo (through Vertex AI)       | Video clips for the spot, with native audio for the breadstick snaps (beats 01 and 06)                          | 1            | Luca          | To confirm |
-| ElevenLabs                           | Italian voiceover for the spot (beats 02 to 08)                                                                 | 1            | Luca          | To confirm |
-| _Image model, to choose_             | Keyframes for the spot and text-free plates for the static visuals, with the official pack photos as references | 1, 2, 3, 4   | Luca, Alessio | To confirm |
-| _Music and sound effects, to choose_ | Music bed from beat 02, and any extra sound effects                                                             | 1            | Luca          | To confirm |
-| Claude (Claude Code)                 | Brand research, concept lock drafting, copy variants, planning documents and this repository                    | 5, 6         | Gianpaolo     | Used       |
+| Tool                                                                                                                   | Used for                                                                                                                                                                  | Deliverables  | Owner              | Status |
+| ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------------ | ------ |
+| Nano Banana 2 on Vertex AI: `gemini-3.1-flash-lite-image` for 1K drafts, `gemini-3.1-flash-image` for 2K and 4K finals | Spot keyframes; text-free plates (scenes, wheat ear, snapped Rubatà) and green-screen mockup backgrounds, conditioned on the official product photos                      | 1, 2, 3, 4    | Luca, Alessio      | Used   |
+| Google Veo 3.1 on Vertex AI: `veo-3.1-fast-generate-001` for drafts, `veo-3.1-generate-001` for finals                 | Video clips for the spot, with native audio for the breadstick snaps (beats 01 and 06)                                                                                    | 1             | Luca               | Used   |
+| ElevenLabs API, voiceover: `eleven_v3`                                                                                 | Italian voiceover for the spot (beats 02 to 08), with a custom Piedmontese pronunciation dictionary and word timestamps for the captions                                  | 1             | Luca               | Used   |
+| ElevenLabs API, music: `music_v1`                                                                                      | Music bed from beat 02                                                                                                                                                    | 1             | Luca               | Used   |
+| ElevenLabs API, sound effects: `eleven_text_to_sound_v3`                                                               | Extra sound effects for the spot                                                                                                                                          | 1             | Luca               | Used   |
+| `gemini-3.8-flash` on Vertex AI                                                                                        | Multimodal quality check of the generated images and clips                                                                                                                | 1             | Luca               | Used   |
+| Claude (Claude Code)                                                                                                   | Research, concept, copy, planning docs and this repository; for the static visuals, wrote the scripts and prompts and checked clear space, safe zones and lettering leaks | 2, 3, 4, 5, 6 | Gianpaolo, Alessio | Used   |
 
 ## Editing and design
 
-| Tool                                 | Used for                                                                                          | Deliverables | Owner         | Status     |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------- | ------------ | ------------- | ---------- |
-| _Video editor, to choose_            | Final edit of the spot, end card, captions and CTA, exports in 16:9 and 9:16                      | 1            | Luca          | To confirm |
-| _Design tool, to choose_             | Compositing logo, claim, headlines and CTA on the generated plates; social, web and print layouts | 2, 3, 4      | Alessio       | To confirm |
-| Google Fonts: Playfair Display, Lato | Titles and body copy, in place of the brand's commercial typeface                                 | 1, 2, 3, 4   | Alessio, Luca | To confirm |
+| Tool                                    | Used for                                                                                                                                                                                                               | Deliverables | Owner         | Status |
+| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------- | ------ |
+| HeyGen HyperFrames (HTML, CSS and GSAP) | Kinetic captions and the animated end card of the spot                                                                                                                                                                 | 1            | Luca          | Used   |
+| FFmpeg and Python                       | Final assembly of the spot, exports in 16:9 and 9:16, audio mastered to −14 LUFS                                                                                                                                       | 1            | Luca          | Used   |
+| Python and Pillow                       | Compositing kit logos, packshots, claim, headlines and CTA. Luca: spot overlays and end card. Alessio (`compose.py`, `campaign.py`): social, web and print layouts, range ad, bus shelter, billboard and phone mockups | 1, 2, 3, 4   | Luca, Alessio | Used   |
+| Google Fonts: Playfair Display, Lato    | Titles (Playfair Display, in place of the brand's commercial typeface Alga, as the identity guide allows) and body copy and CTAs (Lato); both under the SIL Open Font License                                          | 1, 2, 3, 4   | Alessio, Luca | Used   |
+| Google Maps Places API                  | Real Turin locations as references for the arcade scenes                                                                                                                                                               | 1            | Luca          | Used   |
 
 ## Collaboration and delivery
 
@@ -41,10 +45,10 @@ How to keep it current:
 
 ## Role of AI, in one paragraph
 
-To reuse in the [project sheet](https://github.com/B-AROL-O/agenthon-2026/issues/10) (deliverable 5), once the rows above are confirmed:
+To reuse in the [project sheet](https://github.com/B-AROL-O/agenthon-2026/issues/10) (deliverable 5):
 
-> Generative AI made every image, video clip and voice in the campaign, always starting from the official Feyles pack photos so the product stays faithful.
-> All brand text, the logo and the CTAs are added afterwards by hand, never generated, so they are exact.
+> Generative AI made the image plates, video clips, voiceover, music and sound effects in the campaign, always starting from the official Feyles pack photos so the product stays faithful.
+> All brand text, the logo, the packshots and the CTAs are added afterwards in code from the official kit files, never generated, so they are exact.
 > An AI assistant also helped with brand research, the concept and the planning, while the creative choices and the final edit stayed with the team.
 
 <!-- EOF -->

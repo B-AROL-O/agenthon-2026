@@ -4,7 +4,7 @@
 
 Draft of **deliverable 5** for the [Track 2 challenge brief](track2-challenge.md): idea, concept, tools and the role of AI in our work.
 It is tracked in [WP3](https://github.com/B-AROL-O/agenthon-2026/issues/10) and built on the [concept lock](track2-concept-lock.md).
-Items marked _to confirm_ get filled in once production is done; export the final version to `05-project-sheet` in the submission Drive folder before 16:45.
+Export the final version to `05-project-sheet` in the submission Drive folder before 16:45.
 
 ## Project
 
@@ -70,18 +70,18 @@ Layouts split in two halves, mirroring the act of dividing.
 
 ## The role of AI
 
-AI made every image, video clip and voice in the campaign.
+AI made the image plates, video clips, voiceover, music and sound effects in the campaign.
 People made every decision about the idea, the brand and the final cut.
 
-| Step              | What AI did                                                                                                 | What the team did                                                                 |
-| ----------------- | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| Research          | Summarized the client kit, the brand's tone of voice and its public presence                                | Checked every fact against the official kit; kept only verified claims            |
-| Concept           | Explored narrative options and copy variants                                                                | Chose one idea at the 12:00 concept lock and dropped the rest                     |
-| Images            | Generated keyframes and text-free plates, using the official pack photos as references (_model to confirm_) | Wrote the prompts, picked the takes, rejected warped packs                        |
-| Video             | Generated the clips and the snap sounds with Google Veo (_to confirm_)                                      | Directed the 8 beats, chose the takes, edited the spot                            |
-| Voice and music   | Italian voiceover with ElevenLabs (_to confirm_); music bed (_tool to confirm_)                             | Wrote the voiceover lines in the brand's voice; checked pronunciation of «Rubatà» |
-| Text and logo     | None                                                                                                        | Added logo, claim, headlines and CTAs in post-production, so they are exact       |
-| Planning and docs | Drafted the plan, the work breakdown and these documents with Claude                                        | Reviewed, corrected and approved them                                             |
+| Step              | What AI did                                                                                                                                               | What the team did                                                                                                               |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Research          | Summarized the client kit, the brand's tone of voice and its public presence                                                                              | Checked every fact against the official kit; kept only verified claims                                                          |
+| Concept           | Explored narrative options and copy variants                                                                                                              | Chose one idea at the 12:00 concept lock and dropped the rest                                                                   |
+| Images            | Generated keyframes and text-free plates with Nano Banana 2 on Vertex AI, using the official pack photos as references                                    | Wrote the prompts, picked the takes, rejected warped packs; used the real Classico photo for the pack-window post               |
+| Video             | Generated the clips and the snap sounds with Google Veo 3.1 on Vertex AI; checked frames with Gemini                                                      | Directed the 8 beats, chose the takes, edited the spot with HeyGen HyperFrames and FFmpeg                                       |
+| Voice and music   | Italian voiceover, music bed and extra sound effects with ElevenLabs                                                                                      | Wrote the voiceover lines in the brand's voice; built a pronunciation dictionary for «Rubatà» and other Piedmontese words       |
+| Text and logo     | None                                                                                                                                                      | Added logo, packshots, claim, headlines and CTAs in code with Python and Pillow, from the official kit files, so they are exact |
+| Planning and docs | Drafted the plan, the work breakdown and these documents with Claude; Claude Code wrote the compositing scripts and image prompts and checked brand rules | Reviewed, corrected and approved them                                                                                           |
 
 ### Rules we gave the AI
 
@@ -93,7 +93,7 @@ People made every decision about the idea, the brand and the final cut.
 ## Tools
 
 The full list, with what each tool was used for, is in the [Track 2 tools list](track2-tools.md) (deliverable 6).
-In short: Google Veo for video, ElevenLabs for voice, an image model for keyframes and plates (_to confirm_), a video editor and a design tool for post-production (_to confirm_), Claude for research and planning, and GitHub and Google Drive for collaboration.
+In short: Nano Banana 2 for keyframes and plates, Google Veo 3.1 for video, ElevenLabs for voiceover, music and sound effects, HeyGen HyperFrames, FFmpeg and Python with Pillow for editing and compositing, Claude for research, planning and the compositing code, and GitHub and Google Drive for collaboration.
 
 ## Beyond the prototype
 
