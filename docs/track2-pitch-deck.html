@@ -798,11 +798,11 @@
       </div>
     </main>
     <script>
-      function fit() {
-        document.querySelectorAll(".stage").forEach(function (s) {
-          s.style.setProperty("--s", s.clientWidth / 1920);
-        });
-      }
+      const fit = () => {
+        for (const s of document.querySelectorAll(".stage")) {
+          s.style.setProperty("--s", String(s.clientWidth / 1920));
+        }
+      };
       window.addEventListener("resize", fit);
       fit();
     </script>
