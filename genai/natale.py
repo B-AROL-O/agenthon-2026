@@ -1,5 +1,6 @@
 # Layout functions place many elements by coordinates; splitting them would hurt readability.
-# pylint: disable=too-many-locals,too-many-arguments,too-many-positional-arguments
+# Deliberate copies of a few campaign.py and compose.py layouts, tuned for Christmas.
+# pylint: disable=too-many-locals,too-many-arguments,too-many-positional-arguments,duplicate-code
 """WP2 Christmas and Cioccorubatà extension: new files only, next to the existing set.
 
 The Christmas spot tells the 1968-2026 story with Il Cioccorubatà fondente. This script adds
@@ -55,14 +56,10 @@ K.PLATES.update(
 )
 
 
-def item(
-    canvas: Image.Image, path: Path, height: int, xy: tuple[int, int], anchor="mb"
-) -> None:
+def item(canvas: Image.Image, path: Path, height: int, xy: tuple[int, int], anchor="mb") -> None:
     """Any kit mockup at a given height, with the same soft contact shadow as the packshot."""
     im = Image.open(path).convert("RGBA")
-    im = im.resize(
-        (round(im.width * height / im.height), height), Image.Resampling.LANCZOS
-    )
+    im = im.resize((round(im.width * height / im.height), height), Image.Resampling.LANCZOS)
     x = xy[0] - {"l": 0, "m": im.width // 2, "r": im.width}[anchor[0]]
     y = xy[1] - {"t": 0, "m": im.height // 2, "b": im.height}[anchor[1]]
     sh = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
@@ -84,9 +81,7 @@ def gift_pair(canvas: Image.Image, height: int, right: int, bottom: int) -> int:
     return right - box_w - pack_w // 6
 
 
-def stripes(
-    items: list, w: int, h: int, fill: float = 0.8, max_h: float = 0.86
-) -> Image.Image:
+def stripes(items: list, w: int, h: int, fill: float = 0.8, max_h: float = 0.86) -> Image.Image:
     """Colour stripes, each with its real pack standing on a soft contact shadow."""
     c = Image.new("RGBA", (w, h), CREAM)
     d = ImageDraw.Draw(c)
@@ -184,9 +179,7 @@ def choco_post(size: tuple[int, int]) -> Image.Image:
     c.alpha_composite(stripes(CHOCO, w, h - band, 0.62), (0, 0))
     d = ImageDraw.Draw(c)
     m = 72
-    y = text_lines(
-        d, ["Anche il dolce si divide."], 74 if w >= h * 0.99 else 76, m, h - band + 52
-    )
+    y = text_lines(d, ["Anche il dolce si divide."], 74 if w >= h * 0.99 else 76, m, h - band + 52)
     facts = [
         "Rubatà all’olio d’oliva ricoperti di cioccolato.",
         "Fondente · al Latte · al Gianduia",
@@ -206,24 +199,18 @@ def build_choco() -> None:
 
 
 # --- Storia: Christmas carousel, 1968 to today, real kit photos only -------------------
-def slide(
-    top: Image.Image, n: int, total: int, lines: list[str], button=None
-) -> Image.Image:
+def slide(top: Image.Image, n: int, total: int, lines: list[str], button=None) -> Image.Image:
     """4:5 slide: picture 0-1000, cream band with the line, counter and spiga mark."""
     w, h, ph = 1080, 1350, 1000
     c = Image.new("RGBA", (w, h), CREAM)
     c.alpha_composite(top.convert("RGBA"), (0, 0))
     d = ImageDraw.Draw(c)
     f = K.fit(d, lines, "title-bold", 60, 860)
-    y = K.text_lines(
-        d, lines, f, 72, ph + (52 if button else 70 if len(lines) > 1 else 110)
-    )
+    y = K.text_lines(d, lines, f, 72, ph + (52 if button else 70 if len(lines) > 1 else 110))
     if button:
         cta(c, button, (72, y + 52), 30)
     C.paste_width(c, K.SPIGA_ORO, 44, (w - 72, ph + 70), anchor="rt")
-    d.text(
-        (w - 72, h - 56), f"{n}/{total}", font=font("body", 26), fill=BLACK, anchor="rs"
-    )
+    d.text((w - 72, h - 56), f"{n}/{total}", font=font("body", 26), fill=BLACK, anchor="rs")
     return c
 
 
@@ -235,7 +222,7 @@ def photo(name: str, focus=(0.5, 0.5), lift=1.08) -> Image.Image:
 
 def build_storia() -> None:
     """Five 4:5 slides: the long story behind the Christmas spot, in the brand's own words."""
-    slides = [
+    slides: list[tuple] = [
         (
             photo("feyles_foto_forno-del-vecchio-laboratorio.jpg"),
             ["Grissini Rubatà, dal 1968."],
@@ -350,9 +337,7 @@ def build_ad() -> None:
 
 
 # --- Christmas social scenes ------------------------------------------------------------
-def scene(
-    src, size, photo_h, focus, headline, button, sticker=None, gift=False
-) -> Image.Image:
+def scene(src, size, photo_h, focus, headline, button, sticker=None, gift=False) -> Image.Image:
     """Photo on top, cream block below: headline, CTA, lockup, fondente pack or gift pair."""
     w, h = size
     m = round(w * 0.06)
@@ -428,14 +413,10 @@ def banner(size: tuple[int, int]) -> Image.Image:
     w, h = size
     split = round(w * 0.6)
     c = Image.new("RGBA", size, CREAM)
-    c.alpha_composite(
-        cover(K.plate("n-regalo"), split, h, (0.3, 0.5)).convert("RGBA"), (0, 0)
-    )
+    c.alpha_composite(cover(K.plate("n-regalo"), split, h, (0.3, 0.5)).convert("RGBA"), (0, 0))
     d = ImageDraw.Draw(c)
     cx = split + (w - split) // 2
-    y = text_lines(
-        d, ["Da regalare a chi", "apparecchia per tutti."], 58, cx, 90, anchor="ma"
-    )
+    y = text_lines(d, ["Da regalare a chi", "apparecchia per tutti."], 58, cx, 90, anchor="ma")
     gift_pair(c, 430, cx + 230, y + 470)
     cta(c, K.CTA_REGALO, (cx, y + 545), 30, left=False)
     lockup(c, "oro", 200, (cx, h - 90))
@@ -450,18 +431,12 @@ def display(size: tuple[int, int]) -> Image.Image:
     head = "Da regalare a chi apparecchia per tutti."
     if size == (300, 250):
         c.alpha_composite(cover(src, 300, 90, (0.3, 0.42)).convert("RGBA"), (0, 0))
-        text_lines(
-            d, ["Da regalare a chi", "apparecchia per tutti."], 17, 150, 98, anchor="ma"
-        )
-        pill(
-            c, K.CTA_REGALO, (150, 166), font("body-bold", 12), BURGUNDY, CREAM, (14, 7)
-        )
+        text_lines(d, ["Da regalare a chi", "apparecchia per tutti."], 17, 150, 98, anchor="ma")
+        pill(c, K.CTA_REGALO, (150, 166), font("body-bold", 12), BURGUNDY, CREAM, (14, 7))
         C.paste_width(c, C.logo_path("oro"), 110, (150, 228), anchor="mb")
     elif size == (300, 600):
         c.alpha_composite(cover(src, 300, 300, (0.28, 0.45)).convert("RGBA"), (0, 0))
-        y = text_lines(
-            d, ["Da regalare", "a chi apparecchia", "per tutti."], 26, 20, 320
-        )
+        y = text_lines(d, ["Da regalare", "a chi apparecchia", "per tutti."], 26, 20, 320)
         item(c, FONDENTE, 170, (262, 560))
         pill(
             c,
@@ -515,9 +490,7 @@ def magazine() -> Image.Image:
     """A4 page (2480x3508, 300 dpi): the Christmas gift message with body copy."""
     w, h = 2480, 3508
     c = Image.new("RGBA", (w, h), CREAM)
-    c.alpha_composite(
-        cover(K.plate("n-regalo"), w, 1900, (0.32, 0.45)).convert("RGBA"), (0, 0)
-    )
+    c.alpha_composite(cover(K.plate("n-regalo"), w, 1900, (0.32, 0.45)).convert("RGBA"), (0, 0))
     d = ImageDraw.Draw(c)
     m = 200
     y = text_lines(d, ["Da regalare a chi", "apparecchia per tutti."], 170, m, 2040)
@@ -529,9 +502,7 @@ def magazine() -> Image.Image:
     ]
     y = K.text_lines(d, body, font("body", 50), m, y + 60, BLACK, 1.45)
     cta(c, K.CTA_REGALO, (m, y + 110), 56, pad=(70, 36))
-    d.text(
-        (m, y + 240), "grissinificiofeyles.it", font=font("body-bold", 46), fill=BLACK
-    )
+    d.text((m, y + 240), "grissinificiofeyles.it", font=font("body-bold", 46), fill=BLACK)
     lockup(c, "oro", 500, (m, h - 170), anchor="lb")
     gift_pair(c, 700, w - 180, h - 170)
     return c

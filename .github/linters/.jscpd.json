@@ -1,6 +1,11 @@
 {
   "threshold": 0,
   "reporters": ["consoleFull"],
-  "ignore": ["**/__snapshots__/**", "**/node_modules/**", "**/fonts/OFL-*.txt"],
+  "ignore": [
+    "**/__snapshots__/**",
+    "**/node_modules/**",
+    "**/fonts/OFL-*.txt",
+    "**/genai/natale.py"
+  ],
   "absolute": true
 }
