@@ -11,9 +11,30 @@
 - Market benchmark: [Feyles deep research and benchmark](docs/feyles-deep-research.md), competitive positioning, unit economics, and early discoveries
 - Brand specification: [Feyles brand and product kit](docs/feyles-brand-and-product-kit.md), verified 19-SKU catalog, HEX palette, logo rules, and tone of voice ([raw brand kit on Google Drive](https://drive.google.com/drive/folders/1GuPyFJ_Vz8jqk0EnZyB6Sah404fuGxk6), >1 GB, not stored in Git)
 - Concept lock (WP0): [Track 2 concept lock](docs/track2-concept-lock.md), «Si divide. Si condivide.» creative direction and WP1/WP2 handoff
-- Pitch deck: [Track 2 pitch deck](docs/slides/track2-pitch-deck.html) (HTML, 10 slides with speaker notes; open in a browser), with its [slide text](docs/track2-pitch-slides.md)
+- Pitch deck: [Track 2 pitch deck](docs/slides/track2-pitch-deck.html) (HTML, 10 slides with speaker notes; see [Showing the pitch deck](#showing-the-pitch-deck)), with its [slide text](docs/track2-pitch-slides.md)
 - Participants: @gmacario, @aleche28, @FrigaZzz
 - See Group "[Agenthon-2026]((private Telegram group))" on Telegram
+
+## Showing the pitch deck
+
+The [pitch deck](docs/slides/track2-pitch-deck.html) is a single HTML page with its images in `docs/slides/img/`.
+GitHub only shows its source, so serve it over HTTP and open it in a browser.
+
+From a terminal inside the devcontainer (Visual Studio Code or GitHub Codespaces), at the root of the repository:
+
+```bash
+python3 -m http.server 8000 --directory docs/slides
+```
+
+Visual Studio Code forwards port 8000 automatically: click **Open in Browser** in the notification, or open the **Ports** panel and click the globe icon next to port 8000.
+Then add `track2-pitch-deck.html` to the address, for example <http://localhost:8000/track2-pitch-deck.html>.
+Stop the server with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
+
+In the browser:
+
+- <kbd>→</kbd>, <kbd>↓</kbd> or <kbd>Space</kbd>: next slide; <kbd>←</kbd> or <kbd>↑</kbd>: previous slide; <kbd>Home</kbd> and <kbd>End</kbd>: first and last slide
+- <kbd>P</kbd>: presentation mode, one slide per screen without speaker notes; <kbd>F</kbd>: full screen; <kbd>Esc</kbd>: back to the scrolling view with notes
+- Add `#N` to the address to open slide N, for example `track2-pitch-deck.html#5`
 
 ## Useful links
 
