@@ -146,6 +146,6 @@ Keep after the close, shown only if a question needs it.
 > **The numbers**
 >
 > **30 s** spot · **2** campaigns, year-round and Christmas · **80** static files · **10** social concepts × **3** formats · **2** formats for the spot, 16:9 and 9:16
-> **_[N]_** images generated · **_[N]_** clips generated · **_[N]_** kept
+> **25** AI images generated for the static set · **12** kept as plates and mockup scenes · **0** pack texts or logos drawn by the AI
 
 <!-- EOF -->
