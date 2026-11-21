@@ -59,7 +59,7 @@ A first version of the deck built from this text is in the [HTML export](slides/
 
 **Caption after it ends:**
 
-> Every image, clip and voice made with AI.
+> Every shot, voice and sound in the spot made with AI.
 > The pack and the logo are the real ones.
 
 **Speaker:** nothing during the spot.
