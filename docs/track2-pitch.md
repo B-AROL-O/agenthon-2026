@@ -8,6 +8,16 @@ It is tracked in [WP3](https://github.com/B-AROL-O/agenthon-2026/issues/10) and 
 Rules from the [challenge brief](track2-challenge.md): show the problem, the solution and the demo; a demo that works beats ten slides.
 The deck is **not** a deliverable: keep it **outside** the submission Drive folder, so editing it after 17:00 does not touch the submitted files.
 
+## Language
+
+**Decision:** the pitch is delivered **in English**; the spot may keep its Italian voiceover and on-screen words.
+Agreed on 21 November 2026 with the organizer [Gabriele Partiti](https://www.linkedin.com/in/gabrielepartiti/).
+
+- Slides and speaker notes are already in English; campaign copy stays in Italian on the slides, with the English underneath.
+- Say «dividere» in Italian, then translate it straight away: the jury must hear both meanings in English.
+- Before playing the spot, one line explains why it is in Italian (see slide 4).
+- If Luca can add English subtitles to the spot quickly, do it; if not, the spot still works on images and the snap.
+
 ## Principles
 
 - **The spot is the demo.** Play it full screen with sound, once, in the middle of the pitch. Test the audio in the room before starting.
@@ -36,7 +46,7 @@ Speakers are a proposal; swap them as you prefer.
 ### 1. Cold open (0:20)
 
 - Snap a real Rubatà in front of the microphone. Pause.
-- "In Italian, «dividere» means two things: to break, and to share."
+- "In Italian, _dividere_ means two things: to break, and to share." Say the Italian word, then both English meanings.
 - Show the claim: _«Si divide. Si condivide.»_
 
 ### 2. The brief (0:30)
@@ -53,7 +63,7 @@ Speakers are a proposal; swap them as you prefer.
 
 ### 4. Demo: the spot (0:40)
 
-- One line before pressing play: "26 seconds. Listen to the first three."
+- Two lines before pressing play: "The voiceover is in Italian, the language of the people we are selling to. 26 seconds: listen to the first three."
 - Play the spot full screen. Do not talk over it.
 - After it ends, one line: "Every image, clip and voice is AI-generated. The pack and the logo are the real ones."
 
@@ -61,6 +71,7 @@ Speakers are a proposal; swap them as you prefer.
 
 - One look across every channel: daylight, flat colours from the pack, layouts split in two halves like the snap.
 - Walk the grid quickly: ad image _«Spezzatelo. È fatto apposta.»_, Instagram story, wheat-ear window macro, gift banner _«Portate qualcosa da dividere.»_, poster.
+- Read one headline in Italian and give its English (_«Spezzatelo. È fatto apposta.»_: "Break it. It's made for that."), then move on: don't translate them all.
 
 ### 6. How we made it (0:50)
 
