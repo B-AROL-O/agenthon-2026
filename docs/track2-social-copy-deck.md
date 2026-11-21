@@ -7,6 +7,15 @@ Visuals are in the Drive folder `02-social/`, built by `genai/campaign.py` ([iss
 All copy follows the [Feyles brand and product kit](feyles-brand-and-product-kit.md): plural «voi», short sentences, concrete nouns, no forbidden words and only facts from the client kit.
 The text written on the images themselves is listed in the [on-image catchphrases](track2-on-image-copy.md).
 
+## Copy rules
+
+- **Register:** plural «voi» for the audience, «noi» for the bakery. Short sentences, concrete nouns.
+- **Never use:** eccellenza, passione, segreto di famiglia, unico, premium, gourmet, esperienza, autentico, artigianalità.
+- **Never say** "fatto a mano" or "hand-rolled", and never claim awards, founders, volumes or anything the client kit does not state.
+- **CTAs** only from the approved list: «Scoprite gli otto gusti.», «Ordinate online: spediamo in tutta Italia.», «Venite a trovarci in piazza Castello.», «Componete la vostra box regalo.»
+- **No emoji in brand copy.** The brand's voice is plain and understated.
+- **Pronunciation for voice and video:** Rubatà is ru-ba-TÀ, stress on the last syllable.
+
 ## Channel map
 
 Every concept exists in 9:16, 4:5 and 1:1, so each channel takes the native format without a new design.
@@ -98,5 +107,20 @@ The hashtag doubles as a simple user-generated mechanic: one snap, one tag, film
 | Friday    | Si divide. Si condivide | Aperitivo reminder       | Best tagged snaps    |
 | Saturday  | Portate qualcosa        | Componete la vostra box  |                      |
 | Sunday    | A Torino                | Venite a trovarci (shop) |                      |
+
+## Alt text
+
+Add to every post, for accessibility; the same text fits the three formats of a concept.
+
+| Concept      | Alt text                                                                                                                                                             |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spezzatelo   | Due mani di due persone diverse spezzano un grissino Rubatà nodoso, su fondo azzurro.                                                                                |
+| Condivisione | Una tavola dell'aperitivo vista dall'alto: le mani di quattro amici spezzano e si passano grissini Rubatà.                                                           |
+| Finestra     | La confezione Il Classico, con i grissini nodosi visibili dalla finestra a forma di spiga.                                                                           |
+| Torino       | Sotto i portici di Torino, due amici si dividono un grissino Rubatà spezzato.                                                                                        |
+| Regalo       | Sulla porta di casa, un ospite porge al padrone di casa un fascio di grissini Rubatà avvolto nel lino.                                                               |
+| Gamma        | Le sette confezioni da 200 g dei Rubatà Feyles, ognuna su una striscia del proprio colore.                                                                           |
+| Carousel     | Sei immagini: una spiga di grano, i Rubatà che escono dal forno, un grissino spezzato, mani all'aperitivo, il negozio di piazza Castello, la confezione Il Classico. |
+| Spot, TikTok | Due mani spezzano un grissino Rubatà nodoso; amici all'aperitivo si passano i grissini dalla confezione azzurra Il Classico.                                         |
 
 <!-- EOF -->

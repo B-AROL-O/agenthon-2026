@@ -70,7 +70,7 @@ Speakers are a proposal; swap them as you prefer.
 ### 5. The campaign (0:40)
 
 - One look across every channel: daylight, flat colours from the pack, layouts split in two halves like the snap.
-- Walk the grid quickly: ad image _«Spezzatelo. È fatto apposta.»_, Instagram story, wheat-ear window macro, gift banner _«Portate qualcosa da dividere.»_, poster.
+- Walk the grid quickly: hero ad _«Spezzatelo. È fatto apposta.»_, range ad _«Qual è il vostro?»_, condivisione story, wheat-ear window, carousel, poster. 46 files in all, rebuilt from one script in about 40 seconds.
 - Read one headline in Italian and give its English (_«Spezzatelo. È fatto apposta.»_: "Break it. It's made for that."), then move on: don't translate them all.
 
 ### 6. How we made it (0:50)
