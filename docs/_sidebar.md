@@ -14,6 +14,7 @@
 - [AGENTHON 2026: Feyles deep research and benchmark](feyles-deep-research.md)
 - [AGENTHON 2026: Feyles brand and product kit](feyles-brand-and-product-kit.md)
 - [AGENTHON 2026: Track 2 concept lock](track2-concept-lock.md)
+- [AGENTHON 2026: Track 2 static visuals catalogue](track2-wp2-deliverables.md)
 - [AGENTHON 2026: Track 2 social copy deck](track2-social-copy-deck.md)
 - [AGENTHON 2026: Track 2 team brainstorm](brainstorm-track2.md)
 - [HOWTO Create a GitHub repository from template](howto-create-repository-from-template.md)

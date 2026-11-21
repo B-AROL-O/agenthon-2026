@@ -536,6 +536,10 @@ def build_print() -> None:
         "03-web-print/print/print-poster-2x3.png",
         pdf=True,
     )
+    # Viewing copy under the Drive connector's 10 MB upload limit (the PDF is the print master)
+    Image.open(DRIVE / "03-web-print/print/print-poster-2x3.png").convert("RGB").save(
+        DRIVE / "03-web-print/print/print-poster-2x3.jpg", quality=95, dpi=(300, 300)
+    )
     save(billboard(), "03-web-print/print/billboard-6x3m.png", pdf=True)
     save(magazine(), "03-web-print/print/magazine-a4.png", pdf=True)
     save(mupi(), "03-web-print/print/bus-shelter-120x176.png", pdf=True)
