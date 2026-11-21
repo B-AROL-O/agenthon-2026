@@ -47,7 +47,7 @@ A first version of the deck built from this text is in the [HTML export](slides/
 >
 > One gesture does both.
 
-**Speaker:** snap one in half and you are already handing the other half to someone. We don't explain sharing: we show the snap. It uses the shape, the crunch and the act of sharing.
+**Speaker:** snap one in half and you are already handing the other half to someone. We don't explain sharing: one breadstick becomes two. The stills show the snap; the Christmas spot tells the sharing, from 1968 to today. It uses the shape, the crunch and the act of sharing.
 
 ## Slide 4: The spot
 
@@ -102,7 +102,7 @@ In the HTML deck the six images are in place, as web-sized copies of the Drive f
 > **How we made it**
 >
 > **1. Real pack photos** → references for every image
-> **2. AI images and clips** → _[image model]_, Google Veo with real snap sounds
+> **2. AI images and clips** → _[image model]_, Google Veo with native sound
 > **3. AI voice** → ElevenLabs, Italian voiceover
 > **4. Post-production** → logo, claim and CTA added by hand, never generated
 
