@@ -7,6 +7,23 @@ The files are in the [submission Drive folder](https://drive.google.com/drive/fo
 The concept, copy and guardrails come from the [concept lock](track2-concept-lock.md); the captions for each post are in the [social copy deck](track2-social-copy-deck.md).
 Every phrase written on the images, with the files it appears on, is listed in the [on-image catchphrases](track2-on-image-copy.md).
 
+## Checked on Google Drive
+
+<!-- (2026-11-22) -->
+
+On 22 November 2026 the catalogue below was checked file by file against the submission Drive folder.
+Every file listed here is in Drive, under the folder named in its section, and Drive holds no other files in these three folders.
+
+| Drive folder    | Year-round set | Christmas and Cioccorubatà | Total  |
+| --------------- | -------------- | -------------------------- | ------ |
+| `04-ad-image/`  | 4              | 5                          | 9      |
+| `02-social/`    | 21             | 17                         | 38     |
+| `03-web-print/` | 21             | 12                         | 33     |
+| **All**         | **46**         | **34**                     | **80** |
+
+`02-social/` holds one subfolder per concept and one per carousel; `03-web-print/` holds `web/`, `print/` and `mockups/`.
+The counts include the three mockups and both the viewing copy and the print PDF of each print file.
+
 ## How the files were made
 
 Every file comes from one command, `uv run campaign.py` in `genai/` (see [genai/README.md](../genai/README.md)), so the whole set can be rebuilt in about 40 seconds after a copy change.
@@ -37,7 +54,7 @@ Every file comes from one command, `uv run campaign.py` in `genai/` (see [genai/
 
 ## 02-social: social media content set (deliverable 2)
 
-Six concepts, each in the three formats the main channels use: 9:16 (Instagram and Facebook stories, Reels, TikTok), 4:5 (Instagram feed) and 1:1 (Facebook feed, square placements).
+Five concepts, each in the three formats the main channels use: 9:16 (Instagram and Facebook stories, Reels, TikTok), 4:5 (Instagram feed) and 1:1 (Facebook feed, square placements).
 The [copy deck](track2-social-copy-deck.md) maps each file to its channel and gives the caption.
 
 | Folder          | Files                                    | What it shows                                                                                                                                         | Purpose                                                                        | Made with                        |
