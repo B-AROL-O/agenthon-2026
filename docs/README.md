@@ -1,7 +1,7 @@
 # «Si divide. Si condivide.»
 
 Documentation of the B-AROL-O team's entry to the GDG Torino "Build with AI" Agenthon of 21 November 2026, Track 2: GenAI for marketing, for the Rubatà breadsticks of Grissinificio Feyles.
-For an overview of the project, see the [repository README](https://github.com/B-AROL-O/agenthon-2026#readme).
+For an overview of the project, see the [project overview](https://github.com/B-AROL-O/agenthon-2026#readme).
 
 ## What we delivered
 
