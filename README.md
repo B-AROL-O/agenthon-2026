@@ -84,6 +84,8 @@ This project is not otherwise affiliated with or endorsed by Feyles Srl, and the
 
 Copyright (C) 2026, [B-AROL-O Team](https://github.com/B-AROL-O), all rights reserved.
 
+This repository is based on the [python-project-template](https://github.com/arol-polito/python-project-template) template; see [Development container](docs/devcontainer.md) for what it provides.
+
 ### Source code license
 
 The source code contained in this repository and the executable distributions are licensed under the terms of the MIT license as detailed in the [LICENSE](LICENSE) file.
