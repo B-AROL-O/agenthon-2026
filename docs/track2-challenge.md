@@ -2,7 +2,7 @@
 
 <!-- (2026-11-21) -->
 
-Official brief for Track 2, revealed at 10:28 on 21 November 2026 on the [AGENTHON portal]((participant portal)).
+Official brief for Track 2, revealed at 10:28 on 21 November 2026 on the AGENTHON participant portal.
 Deliverables are due by 17:00 on the portal.
 
 ## The challenge

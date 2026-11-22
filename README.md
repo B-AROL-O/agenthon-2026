@@ -1,54 +1,68 @@
-# Preparation to Agenthon-2026
+# «Si divide. Si condivide.»: a GenAI campaign for Feyles Rubatà
 
-- Link: <https://agenthon.gdgtorino.it/>
-- Where: [Feat. House](https://feat.house/), Via Giuseppe Giacosa 15, 10125 Torino
-- When: 2026-11-21
-- Event: "Build with AI" Agenthon, hackathon organised by [GDG Torino](https://gdg.community.dev/gdg-torino/) (waiting for DevFest Alps)
-- Participant portal: <(participant portal)>
-- Sponsors: Ariete Tech, demetra
-- Our track: [Track 2 challenge brief](docs/track2-challenge.md), GenAI for marketing (deliverables due at 17:00)
-- Client research: [Feyles company research](docs/feyles-company-research.md), public info on the Track 2 client
-- Market benchmark: [Feyles deep research and benchmark](docs/feyles-deep-research.md), competitive positioning, unit economics, and early discoveries
-- Brand specification: [Feyles brand and product kit](docs/feyles-brand-and-product-kit.md), verified 19-SKU catalog, HEX palette, logo rules, and tone of voice ([raw brand kit on Google Drive](https://drive.google.com/drive/folders/1GuPyFJ_Vz8jqk0EnZyB6Sah404fuGxk6), >1 GB, not stored in Git)
-- Concept lock (WP0): [Track 2 concept lock](docs/track2-concept-lock.md), «Si divide. Si condivide.» creative direction and WP1/WP2 handoff
-- Pitch deck: [Track 2 pitch deck](docs/slides/track2-pitch-deck.html) (HTML, 10 slides with speaker notes; see [Showing the pitch deck](#showing-the-pitch-deck)), with its [slide text](docs/track2-pitch-slides.md)
-- Participants: @gmacario, @aleche28, @FrigaZzz
-- See Group "[Agenthon-2026]((private Telegram group))" on Telegram
+Entry of the [B-AROL-O team](https://github.com/B-AROL-O) to the [GDG Torino "Build with AI" Agenthon](https://agenthon.gdgtorino.it/) of 21 November 2026, Track 2: GenAI for marketing.
 
-## Showing the pitch deck
+In one working day we designed and produced, almost entirely with generative AI, an advertising campaign for the Rubatà breadsticks of [Grissinificio Feyles](https://grissinificiofeyles.it/), a family bakery near Turin founded in 1968.
+The [challenge brief](docs/track2-challenge.md) asked for a commercial, a social media set, web and print visuals, an advertising image, a project sheet and the list of tools used.
 
-The [pitch deck](docs/slides/track2-pitch-deck.html) is a single HTML page with its images in `docs/slides/img/`.
-GitHub only shows its source, so serve it over HTTP and open it in a browser.
+![Hero ad: two hands snapping one Rubatà on a sky-blue background](docs/slides/img/hero-ad-4x5.jpg)
 
-From a terminal inside the devcontainer (Visual Studio Code or GitHub Codespaces), at the root of the repository:
+## The idea
 
-```bash
-python3 -m http.server 8000 --directory docs/slides
-```
+In Italian, **«dividere»** means two things at once: **to break** and **to share**.
+A Rubatà does both in a single gesture: snap one in half, and you are already handing the other half to someone.
+So the campaign does not explain sharing; it shows the snap, and the aperitivo begins.
 
-Visual Studio Code forwards port 8000 automatically: click **Open in Browser** in the notification, or open the **Ports** panel and click the globe icon next to port 8000.
-Then add `track2-pitch-deck.html` to the address, for example <http://localhost:8000/track2-pitch-deck.html>.
-Stop the server with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
+**Claim:** _«Si divide. Si condivide.»_ (It breaks. It's shared.)
 
-In the browser:
+The full rationale is in the [project sheet](docs/track2-project-sheet.md), and the creative decisions taken at the 12:00 concept lock are in the [concept lock](docs/track2-concept-lock.md).
 
-- <kbd>→</kbd>, <kbd>↓</kbd> or <kbd>Space</kbd>: next slide; <kbd>←</kbd> or <kbd>↑</kbd>: previous slide; <kbd>Home</kbd> and <kbd>End</kbd>: first and last slide
-- <kbd>P</kbd>: presentation mode, one slide per screen without speaker notes; <kbd>F</kbd>: full screen; <kbd>Esc</kbd>: back to the scrolling view with notes
-- Add `#N` to the address to open slide N, for example `track2-pitch-deck.html#5`
+## What we delivered
 
-## Useful links
+| #   | Deliverable                | What it is                                                                                       | Details                                                                                                            |
+| --- | -------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| 1   | Commercial                 | A spot of about 26 seconds in 8 beats, in 16:9 and 9:16                                          | [Concept lock and beat sheet](docs/track2-concept-lock.md)                                                         |
+| 2   | Social media content set   | Five post concepts in 9:16, 4:5 and 1:1, a six-slide carousel and captions                       | [Static visuals catalogue](docs/track2-wp2-deliverables.md), [social copy deck](docs/track2-social-copy-deck.md)   |
+| 3   | Web and print visuals      | Web banners, home page hero, display ads, poster, billboard, bus shelter, magazine page, mockups | [Static visuals catalogue](docs/track2-wp2-deliverables.md), [on-image catchphrases](docs/track2-on-image-copy.md) |
+| 4   | Advertising image          | Hero ad with headline and call to action, in three formats, plus a range ad                      | [Static visuals catalogue](docs/track2-wp2-deliverables.md)                                                        |
+| 5   | Project presentation sheet | Idea, concept, campaign system and the role of AI                                                | [Project sheet](docs/track2-project-sheet.md)                                                                      |
+| 6   | Tool details               | Every platform, model and piece of software used, and what for                                   | [Tools list](docs/track2-tools.md)                                                                                 |
 
-Suggested by Luca during the team call:
+The submitted files were handed in through a Google Drive folder, as the organisers required; [deliverables](docs/deliverables.md) maps each deliverable to its folder.
 
-- Google AI Studio, Gemini model guide: <https://aistudio.google.com/docs/models/gemini-decision-1>
-- Modal: <https://modal.com/>
-- Gemini: <https://gemini.google.com/>
-- Jevai: <https://jevai.net/>
-- Claude design skills: Markdown files (`SKILL.md`) with specialised instructions,
-  aesthetic rules and reusable workflows that guide Claude (through Claude Code or claude.ai)
-  in building interfaces, prototypes and UI/UX designs that do not look AI-generated.
-- Impeccable: <https://impeccable.style/>
-- Artlist toolkit, video mode: <https://toolkit.artlist.io/new?mode=video>
+- **Commercial:** [watch the spot](https://drive.google.com/file/d/1k-UAqDOfcPWlhVR_IKaYoMYq0grGPlYI/view) (`finale.mp4` on Google Drive, about 26 seconds)
+- **Pitch deck:** [HTML deck](docs/slides/track2-pitch-deck.html) with speaker notes, and a PDF attached to each [release](https://github.com/B-AROL-O/agenthon-2026/releases); see [how to show the pitch deck](docs/howto-show-pitch-deck.md)
+
+| Social post                                                  | Billboard mockup                                          | Bus shelter in Turin                                                 |
+| ------------------------------------------------------------ | --------------------------------------------------------- | -------------------------------------------------------------------- |
+| ![Social post, 1:1](docs/slides/img/social-finestra-1x1.jpg) | ![Billboard mockup](docs/slides/img/mockup-billboard.jpg) | ![Bus shelter mockup](docs/slides/img/mockup-bus-shelter-torino.jpg) |
+
+## How we built it
+
+AI made the image plates, the video clips, the voiceover, the music and the sound effects; people made every decision about the idea, the brand and the final cut.
+
+- **Images:** Nano Banana 2 on Vertex AI, with the official pack photos as references, so packs and product stay faithful.
+- **Video:** Google Veo 3.1 on Vertex AI, with native audio for the breadstick snaps.
+- **Voice and music:** ElevenLabs, with a pronunciation dictionary for Piedmontese words such as «Rubatà».
+- **Text and logo:** never generated. Logo, packshots, headlines and calls to action are composited in code with Python and Pillow, so they are exact.
+- **Planning, docs and code:** Claude and Claude Code.
+
+The [`genai/`](genai/README.md) folder holds the Python scripts and prompts that generate the plates and composite the static visuals (deliverables 2, 3 and 4).
+The complete list of tools and model versions is in the [tools list](docs/track2-tools.md).
+
+## Repository layout
+
+| Path                               | Contents                                                                           |
+| ---------------------------------- | ---------------------------------------------------------------------------------- |
+| [`docs/`](docs/)                   | The documentation, also browsable as a [Docsify](https://docsify.js.org/) site     |
+| [`docs/slides/`](docs/slides/)     | The HTML pitch deck and its images                                                 |
+| [`genai/`](genai/)                 | Image generation and compositing pipeline on Vertex AI (Python, managed with `uv`) |
+| [`scripts/`](scripts/)             | Helper scripts: deck to PDF, Markdown to PDF, upload to Google Drive               |
+| [`video/`](video/)                 | Pack images used while making the commercial                                       |
+| [`.devcontainer/`](.devcontainer/) | The [development container](docs/devcontainer.md) the team worked in               |
+
+To preview the docs site locally, run `npx docsify-cli serve docs`.
+How the team organised the day (timeline, task split, brainstorm, useful links) is in the [notes from the hackathon day](docs/hackathon-notes.md).
 
 ## The Team
 
@@ -58,9 +72,17 @@ Suggested by Luca during the team call:
 | [Gianpaolo Macario](https://www.linkedin.com/in/gmacario/)          | [gmacario](https://github.com/gmacario) | [gmacario](https://huggingface.co/gmacario) |
 | [Luca Frigato](https://www.linkedin.com/in/luca-frigato-72a64b155/) | [FrigaZzz](https://github.com/FrigaZzz) | [frigazzz](https://huggingface.co/frigazzz) |
 
+## Trademarks
+
+Feyles, Rubatà, Cioccorubatà, Brichet, the Feyles logo and the pack designs are trademarks of Feyles Srl.
+They appear in this repository only to document a hackathon entry made for Feyles as the Track 2 client.
+This project is not otherwise affiliated with or endorsed by Feyles Srl, and the licenses below do not cover those marks.
+
 ## Copyright and license
 
 Copyright (C) 2026, [B-AROL-O Team](https://github.com/B-AROL-O), all rights reserved.
+
+This repository is based on the [python-project-template](https://github.com/arol-polito/python-project-template) template; see [Development container](docs/devcontainer.md) for what it provides.
 
 ### Source code license
 

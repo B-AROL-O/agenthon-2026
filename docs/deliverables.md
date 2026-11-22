@@ -12,15 +12,19 @@ The team freezes the folder at **16:45** (see the [timeline and WBS](track2-wbs.
 
 | #   | Deliverable                | What we submit                                                                            | Drive folder                                                                                   | Details in this repository                                                                      | Owner     | Status   |
 | --- | -------------------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | --------- | -------- |
-| 1   | Commercial, 20 to 30 s     | The spot, about 26.5 s, in 16:9 and 9:16                                                  | [`01-spot/`](https://drive.google.com/drive/folders/13EHiNV1HQBJPxkDNWpmyLRpG7rdJucXo)         | [Concept lock, beat sheet](track2-concept-lock.md)                                              | Luca      | To check |
-| 2   | Social media content set   | Five post concepts in 3 formats, a carousel and captions; Christmas and Cioccorubatà sets | [`02-social/`](https://drive.google.com/drive/folders/1amFIgQr7ArG1DLYrSLLaNdptWTM_iiFC)       | [Static visuals catalogue](track2-wp2-deliverables.md), [copy deck](track2-social-copy-deck.md) | Alessio   | In Drive |
-| 3   | Web and traditional ads    | Web banners, home page hero, display ads and print files, each with Christmas versions    | [`03-web-print/`](https://drive.google.com/drive/folders/18gIPEFHZyNM86PuDFWHWoinOW7QiNQpd)    | [Static visuals catalogue](track2-wp2-deliverables.md)                                          | Alessio   | To check |
-| 4   | Advertising image          | Hero ad in 3 formats, range ad; Christmas ad, Cioccorubatà ad, full-range ad              | [`04-ad-image/`](https://drive.google.com/drive/folders/1Ot28S0gflXRGzg4BuRky1iISRpEJB-RL)     | [Static visuals catalogue](track2-wp2-deliverables.md)                                          | Alessio   | To check |
-| 5   | Project presentation sheet | Idea, concept, tools and the role of AI, as a document                                    | [`05-project-sheet`](https://drive.google.com/drive/folders/1Vka12bMpa0K35WniqEP6akLKSiTJG9YL) | [Project sheet](track2-project-sheet.md)                                                        | Gianpaolo | In Drive |
-| 6   | Tool details               | Every platform and software we used, and what for, at each production stage               | [`06-tools-list`](https://drive.google.com/drive/folders/1jHfqP7arUS2hm7aHMIjWepbRe3Z3Gw0f)    | [Tools list](track2-tools.md)                                                                   | Gianpaolo | In Drive |
+| 1   | Commercial, 20 to 30 s     | The spot, about 26.5 s, as one video file, `finale.mp4`                                   | [`01-spot/`](https://drive.google.com/drive/folders/13EHiNV1HQBJPxkDNWpmyLRpG7rdJucXo)         | [Concept lock, beat sheet](track2-concept-lock.md)                                              | Luca      | In Drive |
+| 2   | Social media content set   | Five post concepts in 3 formats, a carousel and captions; Christmas and Cioccorubatà sets | [`02-social/`](https://drive.google.com/drive/folders/1amFIgQr7ArG1DLYrSLLaNdptWTM_iiFC)       | [Static visuals catalogue](track2-wp2-deliverables.md), [copy deck](track2-social-copy-deck.md) | Alessio   | Final    |
+| 3   | Web and traditional ads    | Web banners, home page hero, display ads and print files, each with Christmas versions    | [`03-web-print/`](https://drive.google.com/drive/folders/18gIPEFHZyNM86PuDFWHWoinOW7QiNQpd)    | [Static visuals catalogue](track2-wp2-deliverables.md)                                          | Alessio   | Final    |
+| 4   | Advertising image          | Hero ad in 3 formats, range ad; Christmas ad, Cioccorubatà ad, full-range ad              | [`04-ad-image/`](https://drive.google.com/drive/folders/1Ot28S0gflXRGzg4BuRky1iISRpEJB-RL)     | [Static visuals catalogue](track2-wp2-deliverables.md)                                          | Alessio   | Final    |
+| 5   | Project presentation sheet | Idea, concept, tools and the role of AI, as a document                                    | [`05-project-sheet`](https://drive.google.com/drive/folders/1Vka12bMpa0K35WniqEP6akLKSiTJG9YL) | [Project sheet](track2-project-sheet.md)                                                        | Gianpaolo | Final    |
+| 6   | Tool details               | Every platform and software we used, and what for, at each production stage               | [`06-tools-list`](https://drive.google.com/drive/folders/1jHfqP7arUS2hm7aHMIjWepbRe3Z3Gw0f)    | [Tools list](track2-tools.md)                                                                   | Gianpaolo | Final    |
 
 Status values: **To check** (not yet verified in Drive), **In Drive** (files uploaded), **Final** (checked at the final review, do not touch).
-Update the row as soon as something changes.
+
+On 22 November 2026, after the event, every folder was checked against this page.
+Deliverables 2 to 4 match the [static visuals catalogue](track2-wp2-deliverables.md#checked-on-google-drive) file by file.
+Deliverables 5 and 6 are the PDF exports `track2-project-sheet.pdf` and `track2-tools.pdf`.
+`01-spot/` holds a single video, `finale.mp4` (about 12.7 MB, last changed at 16:46), so only one of the two planned formats, 16:9 or 9:16, was submitted.
 
 ## Deliverables in detail
 
@@ -28,7 +32,7 @@ Update the row as soon as something changes.
 
 **The brief asks for** a 20 to 30 second video.
 
-**We submit** one spot of about 26.5 seconds, exported in 16:9 and 9:16.
+**We submit** one spot of about 26.5 seconds. It was planned in 16:9 and 9:16; one file, `finale.mp4`, was submitted.
 It opens on the snap of a Rubatà broken between two hands, goes back to the ear of wheat and the oven, then follows the breadstick under Turin's arcades to an aperitivo with friends, and closes on the claim.
 Keyframes are Nano Banana 2 images referenced to the client's product photos, the clips are Veo 3.1 with native audio for the snaps, and the Italian voiceover is ElevenLabs.
 
