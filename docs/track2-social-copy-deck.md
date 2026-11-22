@@ -4,7 +4,7 @@
 
 Post copy for the «Si divide. Si condivide.» social set (deliverable 2 of the [Track 2 challenge brief](track2-challenge.md)).
 Visuals are in the Drive folder `02-social/`, built by `genai/campaign.py` ([issue #9](https://github.com/B-AROL-O/agenthon-2026/issues/9)).
-All copy follows the [Feyles brand and product kit](feyles-brand-and-product-kit.md): plural «voi», short sentences, concrete nouns, no forbidden words and only facts from the client kit.
+All copy follows the tone-of-voice guide in the official Feyles brand kit (shared with participants for the event only, not published here): plural «voi», short sentences, concrete nouns, no forbidden words and only facts from the client kit.
 The text written on the images themselves is listed in the [on-image catchphrases](track2-on-image-copy.md).
 
 ## Copy rules

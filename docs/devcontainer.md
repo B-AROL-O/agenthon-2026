@@ -1,8 +1,7 @@
-# python-project-template
+# Development container
 
-Project template suitable for Python development.
-
-This template provides a basic [Development Container](https://containers.dev/) with the following components:
+This repository was created from the [python-project-template](https://github.com/arol-polito/python-project-template) template.
+Its `.devcontainer/` provides a basic [Development Container](https://containers.dev/) with the following components:
 
 - [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/) (`az` command)
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI (`claude` command)
@@ -22,12 +21,12 @@ This template provides a basic [Development Container](https://containers.dev/) 
   - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
   - [Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
 
-## Copyright and license for "python-project-template"
+## Copyright and license of the template
 
 Copyright (C) 2024-2026, [Gianpaolo Macario](https://github.com/gmacario), all rights reserved.
 
 ### Source code license
 
-The source code contained in this repository and the executable distributions are licensed under the terms of the MIT license as detailed in the [LICENSE](LICENSE) file.
+The source code contained in this repository and the executable distributions are licensed under the terms of the MIT license as detailed in the [LICENSE](../LICENSE) file.
 
 <!-- EOF -->
