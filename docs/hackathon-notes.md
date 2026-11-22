@@ -3,12 +3,12 @@
 <!-- (2026-11-21) -->
 
 Practical information the team used to prepare for and work during the event.
-It is kept for the record; to see what we delivered, start from the [repository README](https://github.com/B-AROL-O/agenthon-2026#readme).
+It is kept for the record; to see what we delivered, start from the [project overview](https://github.com/B-AROL-O/agenthon-2026#readme).
 
 ## The event
 
 - Event: "Build with AI" Agenthon, a hackathon organised by [GDG Torino](https://gdg.community.dev/gdg-torino/) while waiting for DevFest Alps
-- Website: <https://agenthon.gdgtorino.it/>
+- Site: <https://agenthon.gdgtorino.it/>
 - Where: [Feat. House](https://feat.house/), Via Giuseppe Giacosa 15, 10125 Torino
 - When: 21 November 2026
 - Sponsors: Ariete Tech, Demetra
