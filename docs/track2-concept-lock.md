@@ -3,7 +3,7 @@
 <!-- (2026-11-21) -->
 
 Locked creative direction for **WP0: Concept and creative direction** ([Track 2 timeline and WBS](track2-wbs.md)), resolving [issue #7](https://github.com/B-AROL-O/agenthon-2026/issues/7) and defining the handoff for WP1 (advertising spot) and WP2 (static visuals).
-All brand constraints follow the [Feyles brand and product kit specification](feyles-brand-and-product-kit.md).
+All brand constraints follow the official Feyles brand kit, which was shared with participants for the event only and is not published here.
 
 ## The core idea in one sentence
 
@@ -22,7 +22,7 @@ A Feyles Rubatà performs both in a single gesture — and on the 200 g carton, 
 
 ## Scope lock vs. earlier research
 
-Early research proposed three Christmas-themed concepts spanning multiple gift lines and seasons (see [Feyles deep research](feyles-deep-research.md)).
+Early research proposed three Christmas-themed concepts spanning multiple gift lines and seasons (see [Feyles background research](feyles-background-research.md)).
 To respect the 12:00 WP0 lock and the 20–30 s runtime budget:
 
 - **One hero pack, one gesture:** `Il Classico` 200 g sky-blue carton (`#8DC6E8`) is the visual anchor instead of a full catalog tour (`1.5 kg`/`3 kg` bulk boxes and biscuit _casette_ stay out of frame).

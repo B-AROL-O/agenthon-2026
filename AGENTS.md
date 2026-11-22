@@ -4,16 +4,23 @@ This file provides guidance to AI coding agents working in this repository.
 
 ## What this repository is
 
-Team workspace of the B-AROL-O team for the GDG Torino "Build with AI" Agenthon (21 November 2026, Track 2: GenAI for marketing, client Feyles / Rubatà breadsticks).
-It currently holds **documentation only** — no application code, build tool or tests.
-The `.devcontainer/` image (Node, Python, uv, Claude Code, Docker-in-Docker, gh) is there for whatever gets built during the event.
+Entry of the B-AROL-O team to the GDG Torino "Build with AI" Agenthon (21 November 2026, Track 2: GenAI for marketing, client Feyles / Rubatà breadsticks).
+The hackathon is over: the repository now documents what was delivered, for third-party readers.
+It holds the documentation, the HTML pitch deck (`docs/slides/`), the image generation and compositing pipeline (`genai/`, Python with `uv`) and helper scripts (`scripts/`).
+The `.devcontainer/` image (Node, Python, uv, Claude Code, Docker-in-Docker, gh) is described in [docs/devcontainer.md](docs/devcontainer.md).
 
-Start from [README.md](README.md) for event details and team, then:
+Start from [README.md](README.md) for the project overview and team, then:
 
 - [docs/track2-challenge.md](docs/track2-challenge.md): the official Track 2 brief and deliverables
-- [docs/track2-wbs.md](docs/track2-wbs.md): timeline, hard deadlines (submission freeze 17:00, pitch 17:15) and task split
-- [docs/feyles-company-research.md](docs/feyles-company-research.md): public research on the client
-- [docs/brainstorm-track2.md](docs/brainstorm-track2.md): team brainstorm
+- [docs/track2-project-sheet.md](docs/track2-project-sheet.md): the idea, the concept and the role of AI
+- [docs/deliverables.md](docs/deliverables.md): index of the six deliverables
+- [docs/hackathon-notes.md](docs/hackathon-notes.md): event logistics and working documents from the day
+
+## Public repository
+
+The repository is public.
+Do not commit content from the client's brand kit (licensed to participants for Agenthon 2026 submissions only), private links such as team chat invites, credentials or billing account IDs.
+Link to the client's public channels instead.
 
 ## Docs site
 
