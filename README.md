@@ -30,9 +30,7 @@ The full rationale is in the [project sheet](docs/track2-project-sheet.md), and 
 
 The submitted files were handed in through a Google Drive folder, as the organisers required; [deliverables](docs/deliverables.md) maps each deliverable to its folder.
 
-<!-- TODO: replace with the public link to the final spot -->
-
-- **Commercial:** _public link to the spot coming soon_
+- **Commercial:** [watch the spot](https://drive.google.com/file/d/1k-UAqDOfcPWlhVR_IKaYoMYq0grGPlYI/view) (`finale.mp4` on Google Drive, about 26 seconds)
 - **Pitch deck:** [HTML deck](docs/slides/track2-pitch-deck.html) with speaker notes, and a PDF attached to each [release](https://github.com/B-AROL-O/agenthon-2026/releases); see [how to show the pitch deck](docs/howto-show-pitch-deck.md)
 
 | Social post                                                  | Billboard mockup                                          | Bus shelter in Turin                                                 |
